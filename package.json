@@ -1,0 +1,28 @@
+{
+  "name": "entrepreneurmag-ui",
+  "version": "1.0.0",
+  "description": "entrepreneur magazine rdc UI",
+  "main": "index.js",
+  "repository": "https://github.com/devscast/entrepreneurmag-ui",
+  "author": "Devscast",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@symfony/webpack-encore": "^1.6.1",
+    "autoprefixer": "^10.3.7",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.17"
+  },
+  "scripts": {
+    "dev-server": "encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production --progress"
+  },
+  "devDependencies": {
+    "postcss-loader": "^6.2.0",
+    "sass": "^1.43.3",
+    "sass-loader": "^12.2.0",
+    "webpack-notifier": "^1.14.1"
+  }
+}
