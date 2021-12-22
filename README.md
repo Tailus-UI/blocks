@@ -1,3 +1,3 @@
-# Tailwindcss UI Boilerplate 
+# Tailus blocks
 
-Template de base des projets d'intégration ou développement du design web
++50 blocks built with Tailwind css to help you start your next User Interface with a modern look.

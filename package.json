@@ -1,10 +1,10 @@
 {
-  "name": "entrepreneurmag-ui",
+  "name": "tailus-blocks",
   "version": "1.0.0",
-  "description": "entrepreneur magazine rdc UI",
+  "description": "free blocks",
   "main": "index.js",
-  "repository": "https://github.com/devscast/entrepreneurmag-ui",
-  "author": "Devscast",
+  "repository": "https://github.com/Tailus-UI/blocks",
+  "author": "Tailus",
   "license": "MIT",
   "private": true,
   "dependencies": {
