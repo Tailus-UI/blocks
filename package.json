@@ -14,12 +14,14 @@
     "tailwindcss": "^2.2.17"
   },
   "scripts": {
+    "serve": "http-server templates/",
     "dev-server": "encore dev-server",
     "dev": "encore dev",
     "watch": "encore dev --watch",
     "build": "encore production --progress"
   },
   "devDependencies": {
+    "http-server": "^14.1.0",
     "postcss-loader": "^6.2.0",
     "sass": "^1.43.3",
     "sass-loader": "^12.2.0",
