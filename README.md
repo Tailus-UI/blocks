@@ -1,4 +1,3 @@
-
 # Tailus blocks
 
 A set of +50 beautiful and modern responsive UI Blocks built with tailwindcss
@@ -17,10 +16,6 @@ All blocks are supported by your favorite Browsers.
 |:---:|:---:|:---:|:---:|
 |![Chrome](https://img.icons8.com/fluency/144/000000/chrome.png) | ![Safari](https://img.icons8.com/color/144/000000/safari--v2.png) | ![Edge](https://img.icons8.com/color/144/000000/ms-edge-new.png) | ![Firefox](https://img.icons8.com/external-tal-revivo-color-tal-revivo/144/000000/external-firefox-a-free-and-open-source-web-browser-developed-by-the-mozilla-foundation-logo-color-tal-revivo.png)
 
-## Lighthouse stats
-The average of the blocks test
-### Mobile
+## Contibute
 
-![Mobile stats](https://raw.githubusercontent.com/Tailus-UI/file-uploader/master/mobile.png) 
-### Desktop
-![On desktop stats](https://raw.githubusercontent.com/Tailus-UI/file-uploader/master/desktop.png) |
+If you're interested in contributing to Tailus Blocks, please read our [contributing docs](CONTRIBUTING.md) before submitting a pull request.
