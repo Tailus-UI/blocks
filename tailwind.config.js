@@ -4,7 +4,14 @@ module.exports = {
   mode: 'jit',
   purge: {
     content : ['./templates/**/*.html'],
-    safelist : []
+    safelist : [
+      'translate-y-1.5',
+      '-translate-y-1',
+      'rotate-45',
+      '-rotate-45',
+      '!bg-yellow-900',
+      'border-yellow-300'
+    ]
   },
   presets: [],
   darkMode: false, // or 'media' or 'class'
