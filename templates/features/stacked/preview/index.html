@@ -1,83 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="flat features cards">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="flat features cards" />
     <title>Tailus blocks | flat features cards</title>
 
-    <link rel="stylesheet" href="css/tailus.css">
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <div class="py-16 bg-gray-50 overflow-hidden">
-        <div class="container m-auto px-6 space-y-8 text-gray-500 md:px-12">
-            <div>
-                <span class="text-gray-600 text-lg font-semibold">Main features</span>
-                <h2 class="mt-4 text-2xl text-gray-900 font-bold md:text-4xl">A technology-first approach to payments <br class="lg:block" hidden> and finance</h2>
-            </div>
-            <div class="mt-16 grid border divide-x divide-y rounded-xl overflow-hidden sm:grid-cols-2 lg:divide-y-0 lg:grid-cols-3 xl:grid-cols-4">
-                <div class="relative group bg-white transition hover:z-[1] hover:shadow-2xl">
-                    <div class="relative p-8 space-y-8">
-                        <img src="images/avatars/burger.png" class="w-10" width="512" height="512" alt="burger illustration">
-                        
-                        <div class="space-y-2">
-                            <h5 class="text-xl text-gray-800 font-medium transition group-hover:text-yellow-600">First feature</h5>
-                            <p class="text-sm text-gray-600">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
-                        </div>
-                        <a href="#" class="flex justify-between items-center group-hover:text-yellow-600">
-                            <span class="text-sm">Read more</span>
-                            <span class="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">&RightArrow;</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="relative group bg-white transition hover:z-[1] hover:shadow-2xl">
-                    <div class="relative p-8 space-y-8">
-                        <img src="images/avatars/trowel.png" class="w-10" width="512" height="512" alt="burger illustration">
-                        
-                        <div class="space-y-2">
-                            <h5 class="text-xl text-gray-800 font-medium transition group-hover:text-yellow-600">Second feature</h5>
-                            <p class="text-sm text-gray-600">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
-                        </div>
-                        <a href="#" class="flex justify-between items-center group-hover:text-yellow-600">
-                            <span class="text-sm">Read more</span>
-                            <span class="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">&RightArrow;</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="relative group bg-white transition hover:z-[1] hover:shadow-2xl">
-                    <div class="relative p-8 space-y-8">
-                        <img src="images/avatars/package-delivery.png" class="w-10" width="512" height="512" alt="burger illustration">
-                        
-                        <div class="space-y-2">
-                            <h5 class="text-xl text-gray-800 font-medium transition group-hover:text-yellow-600">Third feature</h5>
-                            <p class="text-sm text-gray-600">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
-                        </div>
-                        <a href="#" class="flex justify-between items-center group-hover:text-yellow-600">
-                            <span class="text-sm">Read more</span>
-                            <span class="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">&RightArrow;</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="relative group bg-gray-100 transition hover:z-[1] hover:shadow-2xl lg:hidden xl:block">
-                    <div class="relative p-8 space-y-8 border-dashed rounded-lg transition duration-300 group-hover:bg-white group-hover:border group-hover:scale-90">
-                        <img src="images/avatars/metal.png" class="w-10" width="512" height="512" alt="burger illustration">
-                        
-                        <div class="space-y-2">
-                            <h5 class="text-xl text-gray-800 font-medium transition group-hover:text-yellow-600">More features</h5>
-                            <p class="text-sm text-gray-600">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
-                        </div>
-                        <a href="#" class="flex justify-between items-center group-hover:text-yellow-600">
-                            <span class="text-sm">Read more</span>
-                            <span class="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">&RightArrow;</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <link rel="stylesheet" href="css/tailus.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="overflow-hidden bg-gray-50 py-16">
+      <div class="container m-auto space-y-8 px-6 text-gray-500 md:px-12">
+        <div>
+          <span class="text-lg font-semibold text-gray-600">Main features</span>
+          <h2 class="mt-4 text-2xl font-bold text-gray-900 md:text-4xl">
+            A technology-first approach to payments <br class="lg:block" hidden />
+            and finance
+          </h2>
         </div>
-    </div>   
+        <div
+          class="mt-16 grid divide-x divide-y overflow-hidden rounded-xl border sm:grid-cols-2 lg:grid-cols-3 lg:divide-y-0 xl:grid-cols-4"
+        >
+          <div class="group relative bg-white transition hover:z-[1] hover:shadow-2xl">
+            <div class="relative space-y-8 p-8">
+              <img
+                src="images/avatars/burger.png"
+                class="w-10"
+                width="512"
+                height="512"
+                alt="burger illustration"
+              />
 
-</body>
+              <div class="space-y-2">
+                <h5
+                  class="text-xl font-medium text-gray-800 transition group-hover:text-yellow-600"
+                >
+                  First feature
+                </h5>
+                <p class="text-sm text-gray-600">
+                  Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                </p>
+              </div>
+              <a href="#" class="flex items-center justify-between group-hover:text-yellow-600">
+                <span class="text-sm">Read more</span>
+                <span
+                  class="-translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                  >&RightArrow;</span
+                >
+              </a>
+            </div>
+          </div>
+          <div class="group relative bg-white transition hover:z-[1] hover:shadow-2xl">
+            <div class="relative space-y-8 p-8">
+              <img
+                src="images/avatars/trowel.png"
+                class="w-10"
+                width="512"
+                height="512"
+                alt="burger illustration"
+              />
+
+              <div class="space-y-2">
+                <h5
+                  class="text-xl font-medium text-gray-800 transition group-hover:text-yellow-600"
+                >
+                  Second feature
+                </h5>
+                <p class="text-sm text-gray-600">
+                  Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                </p>
+              </div>
+              <a href="#" class="flex items-center justify-between group-hover:text-yellow-600">
+                <span class="text-sm">Read more</span>
+                <span
+                  class="-translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                  >&RightArrow;</span
+                >
+              </a>
+            </div>
+          </div>
+          <div class="group relative bg-white transition hover:z-[1] hover:shadow-2xl">
+            <div class="relative space-y-8 p-8">
+              <img
+                src="images/avatars/package-delivery.png"
+                class="w-10"
+                width="512"
+                height="512"
+                alt="burger illustration"
+              />
+
+              <div class="space-y-2">
+                <h5
+                  class="text-xl font-medium text-gray-800 transition group-hover:text-yellow-600"
+                >
+                  Third feature
+                </h5>
+                <p class="text-sm text-gray-600">
+                  Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                </p>
+              </div>
+              <a href="#" class="flex items-center justify-between group-hover:text-yellow-600">
+                <span class="text-sm">Read more</span>
+                <span
+                  class="-translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                  >&RightArrow;</span
+                >
+              </a>
+            </div>
+          </div>
+          <div
+            class="group relative bg-gray-100 transition hover:z-[1] hover:shadow-2xl lg:hidden xl:block"
+          >
+            <div
+              class="relative space-y-8 rounded-lg border-dashed p-8 transition duration-300 group-hover:scale-90 group-hover:border group-hover:bg-white"
+            >
+              <img
+                src="images/avatars/metal.png"
+                class="w-10"
+                width="512"
+                height="512"
+                alt="burger illustration"
+              />
+
+              <div class="space-y-2">
+                <h5
+                  class="text-xl font-medium text-gray-800 transition group-hover:text-yellow-600"
+                >
+                  More features
+                </h5>
+                <p class="text-sm text-gray-600">
+                  Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                </p>
+              </div>
+              <a href="#" class="flex items-center justify-between group-hover:text-yellow-600">
+                <span class="text-sm">Read more</span>
+                <span
+                  class="-translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                  >&RightArrow;</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

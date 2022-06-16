@@ -1,97 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="hero architecture section">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="hero architecture section" />
 
     <title>Tailus blocks | hero architecture section</title>
 
-    <link rel="stylesheet" href="css/tailus.css">
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailus.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="bg-white">
     <div class="relative w-full">
-        <header>
-            <nav class="fixed z-10 w-full border-b bg-white md:absolute md:bg-transparent">
-                <div class="container m-auto px-2 md:px-12 lg:px-7">
-                    <div class="flex flex-wrap items-center justify-between py-4 gap-6 md:py-4 md:gap-0">
-                        <div class="w-full px-6 flex justify-between lg:w-max md:px-0">
-                            <a href="#" aria-label="logo" class="flex space-x-2 items-center">
-                                <div aria-hidden="true" class="flex space-x-1">
-                                    <div class="h-4 w-4 rounded-full bg-gray-900"></div>
-                                    <div class="h-6 w-2 bg-yellow-500"></div>
-                                </div>
-                                <span class="text-2xl font-bold text-gray-900">Arceelus</span>
-                            </a>
+      <header>
+        <nav class="fixed z-10 w-full border-b bg-white md:absolute md:bg-transparent">
+          <div class="container m-auto px-2 md:px-12 lg:px-7">
+            <div class="flex flex-wrap items-center justify-between gap-6 py-4 md:gap-0 md:py-4">
+              <div class="flex w-full justify-between px-6 md:px-0 lg:w-max">
+                <a href="#" aria-label="logo" class="flex items-center space-x-2">
+                  <div aria-hidden="true" class="flex space-x-1">
+                    <div class="h-4 w-4 rounded-full bg-gray-900"></div>
+                    <div class="h-6 w-2 bg-yellow-500"></div>
+                  </div>
+                  <span class="text-2xl font-bold text-gray-900">Arceelus</span>
+                </a>
 
-                            <button aria-label="humburger" id="hamburger" class="relative w-10 h-10 -mr-2 lg:hidden">
-                                <div aria-hidden="true" id="line" class="inset-0 w-6 h-0.5 m-auto rounded bg-yellow-900 transtion duration-300"></div>
-                                <div aria-hidden="true" id="line2" class="inset-0 w-6 h-0.5 mt-2 m-auto rounded bg-yellow-900 transtion duration-300"></div>
-                            </button>
-                        </div>
+                <button
+                  aria-label="humburger"
+                  id="hamburger"
+                  class="relative -mr-2 h-10 w-10 lg:hidden"
+                >
+                  <div
+                    aria-hidden="true"
+                    id="line"
+                    class="transtion inset-0 m-auto h-0.5 w-6 rounded bg-yellow-900 duration-300"
+                  ></div>
+                  <div
+                    aria-hidden="true"
+                    id="line2"
+                    class="transtion inset-0 m-auto mt-2 h-0.5 w-6 rounded bg-yellow-900 duration-300"
+                  ></div>
+                </button>
+              </div>
 
-                        <div class="hidden w-full lg:flex flex-wrap justify-end items-center space-y-6 p-6 rounded-xl bg-white md:space-y-0 md:p-0 md:flex-nowrap md:bg-transparent lg:w-7/12">
-                            <div class="text-gray-600 lg:pr-4">
-                                <ul class="space-y-6 tracking-wide font-medium text-sm md:flex md:space-y-0">
-                                    <li>
-                                        <a href="#" class="block md:px-4 transition hover:text-yellow-700">
-                                            <span>Home</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="block md:px-4 transition hover:text-yellow-700">
-                                            <span>Portfolio</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="block md:px-4 transition hover:text-yellow-700">
-                                            <span>Services</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="w-full space-y-2 border-yellow-200 lg:space-y-0 md:w-max lg:border-l">
-                                <button type="button" title="Start buying" class="w-full py-3 px-6 text-center rounded-full transition active:bg-yellow-200 focus:bg-yellow-100 sm:w-max">
-                                    <span class="block text-yellow-800 font-semibold text-sm">
-                                        Sign up
-                                    </span>
-                                </button>
-                                <button type="button" title="Start buying" class="w-full py-3 px-6 text-center rounded-full transition bg-yellow-300 hover:bg-yellow-100 active:bg-yellow-400 focus:bg-yellow-300 sm:w-max">
-                                    <span class="block text-yellow-900 font-semibold text-sm">
-                                        Contact Us
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+              <div
+                class="hidden w-full flex-wrap items-center justify-end space-y-6 rounded-xl bg-white p-6 md:flex-nowrap md:space-y-0 md:bg-transparent md:p-0 lg:flex lg:w-7/12"
+              >
+                <div class="text-gray-600 lg:pr-4">
+                  <ul class="space-y-6 text-sm font-medium tracking-wide md:flex md:space-y-0">
+                    <li>
+                      <a href="#" class="block transition hover:text-yellow-700 md:px-4">
+                        <span>Home</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="block transition hover:text-yellow-700 md:px-4">
+                        <span>Portfolio</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="block transition hover:text-yellow-700 md:px-4">
+                        <span>Services</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-            </nav>
-        </header>
-        <div>
-            <img class="absolute w-full object-cover object-top h-[90vh] inset-0 top-[4.68rem]" src="images/bg2.webp" alt="image" loading="lazy">
-            <div class="relative container border-l border-r m-auto px-6 md:px-12 lg:px-7">
-                <div class="py-40 lg:py-56 md:w-9/12 lg:w-7/12 ml-auto">
-                    <h1 class="text-gray-900 font-bold text-4xl md:text-6xl lg:text-4xl xl:text-6xl">Shaping a world with an endless <span class="text-yellow-600">imagination.</span></h1>
-                    <p class="mt-8 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta!</p>
-                    <div class="mt-16 space-y-2 lg:space-y-0 md:w-max sm:space-x-6">
-                        <button type="button" title="Start buying" class="w-full py-3 px-6 text-center rounded-full transition border border-gray-200 active:bg-yellow-200 focus:bg-yellow-100 sm:w-max">
-                            <span class="block text-yellow-800 font-semibold text-sm">
-                                About us
-                            </span>
-                        </button>
-                        <button type="button" title="Start buying" class="w-full py-3 px-6 text-center rounded-full transition bg-yellow-300 hover:bg-yellow-100 active:bg-yellow-400 focus:bg-yellow-300 sm:w-max">
-                            <span class="block text-yellow-900 font-semibold text-sm">
-                                Contact Us
-                            </span>
-                        </button>
-                    </div>
+
+                <div class="w-full space-y-2 border-yellow-200 md:w-max lg:space-y-0 lg:border-l">
+                  <button
+                    type="button"
+                    title="Start buying"
+                    class="w-full rounded-full py-3 px-6 text-center transition focus:bg-yellow-100 active:bg-yellow-200 sm:w-max"
+                  >
+                    <span class="block text-sm font-semibold text-yellow-800"> Sign up </span>
+                  </button>
+                  <button
+                    type="button"
+                    title="Start buying"
+                    class="w-full rounded-full bg-yellow-300 py-3 px-6 text-center transition hover:bg-yellow-100 focus:bg-yellow-300 active:bg-yellow-400 sm:w-max"
+                  >
+                    <span class="block text-sm font-semibold text-yellow-900"> Contact Us </span>
+                  </button>
                 </div>
-            </div> 
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div>
+        <img
+          class="absolute inset-0 top-[4.68rem] h-[90vh] w-full object-cover object-top"
+          src="images/bg2.webp"
+          alt="image"
+          loading="lazy"
+        />
+        <div class="container relative m-auto border-l border-r px-6 md:px-12 lg:px-7">
+          <div class="ml-auto py-40 md:w-9/12 lg:w-7/12 lg:py-56">
+            <h1 class="text-4xl font-bold text-gray-900 md:text-6xl lg:text-4xl xl:text-6xl">
+              Shaping a world with an endless <span class="text-yellow-600">imagination.</span>
+            </h1>
+            <p class="mt-8 text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed
+              eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem
+              harum omnis beatae ipsum soluta!
+            </p>
+            <div class="mt-16 space-y-2 sm:space-x-6 md:w-max lg:space-y-0">
+              <button
+                type="button"
+                title="Start buying"
+                class="w-full rounded-full border border-gray-200 py-3 px-6 text-center transition focus:bg-yellow-100 active:bg-yellow-200 sm:w-max"
+              >
+                <span class="block text-sm font-semibold text-yellow-800"> About us </span>
+              </button>
+              <button
+                type="button"
+                title="Start buying"
+                class="w-full rounded-full bg-yellow-300 py-3 px-6 text-center transition hover:bg-yellow-100 focus:bg-yellow-300 active:bg-yellow-400 sm:w-max"
+              >
+                <span class="block text-sm font-semibold text-yellow-900"> Contact Us </span>
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
   </body>
 </html>
