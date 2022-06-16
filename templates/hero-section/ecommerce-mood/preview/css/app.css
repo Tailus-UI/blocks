@@ -5,3 +5,15 @@
 body{
     font-family: 'Urbanist', sans-serif;
 }
+
+@layer components{
+    #toggleNav:checked ~ .block-endnav #hamburger #line
+    {
+        @apply rotate-45 absolute
+    }
+
+    #toggleNav:checked ~ .block-endnav #hamburger #line2
+    {
+        @apply -rotate-45 absolute mt-1.5
+    }
+}

@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors')
+//const colors = require('tailwindcss/colors')
 
 module.exports = {
   mode: 'jit',
@@ -23,7 +23,7 @@ module.exports = {
       xl: '1280px',
       '2xl': '1536px',
     },
-    colors: {
+    colors:({ colors }) =>({
       transparent: 'transparent',
       current: 'currentColor',
 
@@ -39,7 +39,7 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
-    },
+    }),
     spacing: {
       px: '1px',
       0: '0px',

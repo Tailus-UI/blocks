@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,61 +10,87 @@
     <title>Tailus blocks | hero job section</title>
 
     <link rel="stylesheet" href="css/tailus.css">
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
-  </head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+</head>
 
-  <body class="bg-white">
+<body class="bg-white">
     <div class="relative w-full">
-        <nav class="fixed z-10 w-full border-b bg-white md:absolute md:bg-transparent">
+        <nav class="fixed z-40 w-full border-b bg-white md:absolute md:bg-transparent">
             <div class="container m-auto px-2 md:px-12 lg:px-7">
-                <div class="flex flex-wrap items-center justify-between py-6 gap-6 md:py-4 md:gap-0">
-                    <div class="w-full px-6 flex justify-between lg:w-max md:px-0">
+                <div class="flex px-6 md:px-0 z-20 flex-wrap items-center justify-between py-6 gap-6 md:py-4 md:gap-0">
+                    <input type="checkbox" name="" id="toggleNav" class="peer hidden">
+                    <label for="toggleNav" role="overlaynav" class="fixed left-0 top-20 transition-all opacity-0 hidden peer-checked:z-0 peer-checked:opacity-100 peer-checked:block w-full h-full bg-gray-500 bg-opacity-30"></label>
+                    <div class=" flex justify-between w-max md:px-0 z-20">
                         <a href="#" aria-label="logo">
                             <img src="images/logo.svg" class="w-36" alt="tailus logo" width="144" height="68">
                         </a>
-
-                        <button aria-label="humburger" id="hamburger" class="relative w-10 h-10 -mr-2 lg:hidden">
-                            <div aria-hidden="true" id="line" class="inset-0 w-6 h-0.5 m-auto rounded bg-gray-500 transtion duration-300"></div>
-                            <div aria-hidden="true" id="line2" class="inset-0 w-6 h-0.5 mt-2 m-auto rounded bg-gray-500 transtion duration-300"></div>
-                        </button>
                     </div>
-
-                    <div class="hidden w-full lg:flex flex-wrap justify-between items-center space-y-12 p-6 rounded-xl bg-white md:w-8/12 md:space-y-0 md:p-0 md:flex-nowrap md:bg-transparent lg:w-7/12">
-                        <div class="block w-full">
-                            <ul class="space-y-12 tracking-wide font-medium md:flex md:space-y-0">
-                                <li>
+                    
+                    <div id="navlinks"
+                        class="fixed h-full w-4/5 max-w-sm top-0 -left-full peer-checked:-left-0 md:relative md:top-0 md:left-0 transition-all z-30 md:flex items-center p-6 bg-white md:space-y-0 md:p-0 md:flex-nowrap md:bg-transparent md:w-max">
+                        <div class="z-20 flex gap-8 md:gap-0 flex-col md:flex-row md:items-center w-full">
+                            <ul class="gap-8 tracking-wide font-medium flex-col flex md:flex-row md:gap-0">
+                                <li class="md:hidden pb-6">
+                                    <a href="#" aria-label="logo">
+                                        <img src="images/logo.svg" class="w-36" alt="tailus logo" width="144" height="68">
+                                    </a>
+                                </li>
+                                <li class="max-w-max">
                                     <a href="#" class="block md:px-3">
-                                        <div class="relative text-cyan-800
-                                                    before:absolute before:-bottom-7 before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-cyan-800">
+                                        <div
+                                            class="relative text-cyan-800
+                                                    before:absolute before:-bottom-2 md:before:-bottom-7 before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-cyan-800">
                                             <span>Nike</span>
                                         </div>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="max-w-max">
                                     <a href="#" class="block md:px-3 group">
-                                        <div class="relative text-gray-600
-                                                    before:absolute before:-bottom-7 before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-cyan-800 before:transition before:scale-x-0 group-hover:before:scale-x-100">
+                                        <div
+                                            class="relative text-gray-600
+                                                    before:absolute before:-bottom-2 md:before:-bottom-7 before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-cyan-800 before:transition before:scale-x-0 group-hover:before:scale-x-100">
                                             <span class="transition group-hover:text-cyan-700">Adiddas</span>
                                         </div>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="max-w-max">
                                     <a href="#" class="block md:px-3 group">
-                                        <div class="relative text-gray-600
-                                                    before:absolute before:-bottom-7 before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-cyan-800 before:transition before:scale-x-0 group-hover:before:scale-x-100">
+                                        <div
+                                            class="relative text-gray-600
+                                                    before:absolute before:-bottom-2 md:before:-bottom-7 before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-cyan-800 before:transition before:scale-x-0 group-hover:before:scale-x-100">
                                             <span class="transition group-hover:text-cyan-700">Cart</span>
                                         </div>
                                     </a>
                                 </li>
                             </ul>
+                            <div class="flex sm:hidden pt-4 w-full">
+                                <button type="button" title="Start buying"
+                                    class=" flex justify-center items-center w-full py-3 px-6 text-center rounded-full transition bg-gray-900 hover:bg-cyan-500 active:bg-cyan-600 focus:bg-cyan-800">
+                                    <span class="block text-white text-sm">
+                                        Shop now
+                                    </span>
+                                </button>
+                            </div>
                         </div>
+                    </div>
+                    <div class="block-endnav w-max flex items-center gap-4">
+                        <button type="button" title="Start buying"
+                            class="hidden sm:block w-full py-3 px-6 text-center rounded-full transition bg-gray-900 hover:bg-cyan-500 active:bg-cyan-600 focus:bg-cyan-800 sm:w-max">
+                            <span class="block text-white text-sm">
+                                Shop now
+                            </span>
+                        </button>
 
-                        <div class="w-full md:w-max">
-                            <button type="button" title="Start buying" class="w-full py-3 px-6 text-center rounded-full transition bg-gray-900 hover:bg-cyan-500 active:bg-cyan-600 focus:bg-cyan-800 sm:w-max">
-                                <span class="block text-white text-sm">
-                                    Shop now
-                                </span>
-                            </button>
+                        <div class="flex items-center md:hidden max-h-10">
+                            <label for="toggleNav" aria-label="humburger" id="hamburger" class="relative w-10 h-auto p-2 md:hidden">
+                                <div role="hidden" id="line"
+                                    class="inset-0 w-6 h-0.5 m-auto rounded-full bg-gray-500 transition duration-300"></div>
+                                <div role="hidden" id="line2"
+                                    class="inset-0 w-6 h-0.5 mt-1.5 m-auto rounded-full bg-gray-500 transition duration-300">
+                                </div>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -71,20 +98,25 @@
         </nav>
         <div class="border-b">
             <div class="container m-auto px-6 pt-24 border-r border-l md:px-12  lg:pt-[4.8rem] lg:px-7">
-                <div class="flex items-center flex-wrap gap-12 px-2 md:px-0">
-                    <div class="lg:w-6/12 lg:-ml-7">
-                        <div class="relative">
-                            <img src="images/shoes2.jpg" alt="shoes" loading="lazy" width="640" height="640">
+                <div class="grid lg:grid-cols-2 items-center gap-12 px-2 md:px-0">
+                    <div class="col-span-1">
+                        <div class="relative w-full">
+                            <img src="images/shoes2.jpg" alt="shoes" loading="lazy" width="100%" height="640">
                             <div class="absolute bottom-2 right-2 bg-white">
                                 <div class="flex p-1">
                                     <button aria-label="button-left" class="p-3 border-r">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="rotate-180" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            class="rotate-180" fill="currentColor" class="bi bi-chevron-right"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                                         </svg>
                                     </button>
                                     <button aria-label="button-right" class="p-3">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                                         </svg>
                                     </button>
                                 </div>
@@ -92,17 +124,21 @@
                         </div>
                     </div>
 
-                    <div class="relative lg:w-6/12 lg:-ml-20">
-                        <h1 class="font-bold text-5xl sm:text-6xl md:text-7xl xl:text-8xl">A Look for every <span class="text-cyan-800">mood</span>.</h1>
-                        <div class="mt-16 space-y-8 lg:ml-32">
-                            <p class="text-gray-700">Sit amet consectetur adipisicing elit. eligendi tenetur nihil quaerat suscipit, sunt dignissimos.</p>
+                    <div class="relative col-span-1">
+                        <h1 class="font-bold text-5xl sm:text-6xl md:text-7xl xl:text-8xl">A Look for every <span
+                                class="text-cyan-800">mood</span>.</h1>
+                        <div class="mt-16 space-y-8">
+                            <p class="text-gray-700">Sit amet consectetur adipisicing elit. eligendi tenetur nihil
+                                quaerat suscipit, sunt dignissimos.</p>
                             <div class="flex space-x-4 ">
-                                <button type="button" title="Start buying" class="w-full py-3 px-6 text-center rounded-full transition duration-300 bg-gray-900 hover:bg-cyan-500 active:bg-cyan-600 focus:bg-cyan-800 sm:w-max">
+                                <button type="button" title="Start buying"
+                                    class="w-full py-3 px-6 text-center rounded-full transition duration-300 bg-gray-900 hover:bg-cyan-500 active:bg-cyan-600 focus:bg-cyan-800 sm:w-max">
                                     <span class="block text-white text-sm">
                                         Shop now
                                     </span>
                                 </button>
-                                <button type="button" title="Start buying" class="w-full py-3 px-6 text-center rounded-full transition border border-gray-200 sm:w-max">
+                                <button type="button" title="Start buying"
+                                    class="w-full py-3 px-6 text-center rounded-full transition border border-gray-200 sm:w-max">
                                     <span class="block text-gray-800 text-sm">
                                         View store
                                     </span>
@@ -114,5 +150,6 @@
             </div>
         </div>
     </div>
-  </body>
+</body>
+
 </html>
