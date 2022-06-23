@@ -14,5 +14,5 @@ body{
     #toggle_nav:checked ~ div #hamburger #line2
     {
         @apply -rotate-45 absolute mt-1.5
-    }
+    } 
 }
