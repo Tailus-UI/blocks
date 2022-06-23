@@ -2,20 +2,55 @@
     <nav class="fixed w-full bg-white">
         <div class="container m-auto px-6 md:px-12 lg:px-6">
             <div class="flex flex-wrap items-center justify-between py-6 gap-6 md:py-4 md:gap-0">
+                <input type="checkbox" name="toggle_nav" id="toggle_nav" class="peer hidden">
                 <div class="w-full flex justify-between lg:w-auto">
                     <a href="#" aria-label="logo">
                         <img src="images/logo.svg" class="w-36" alt="tailus logo" width="144" height="48">
                     </a>
-
-                    <button aria-label="humburger" id="hamburger" class="relative w-10 h-10 -mr-2 lg:hidden">
-                        <div aria-hidden="true" id="line" class="inset-0 w-6 h-0.5 m-auto rounded bg-gray-500 transtion duration-300"></div>
-                        <div aria-hidden="true" id="line2" class="inset-0 w-6 h-0.5 mt-2 m-auto rounded bg-gray-500 transtion duration-300"></div>
-                    </button>
+                    <div class="flex items-center lg:hidden max-h-10">
+                        <label for="toggle_nav" aria-label="humburger" id="hamburger" class="relative w-10 h-auto p-2">
+                            <div id="line"
+                                class="inset-0 w-6 h-0.5 m-auto rounded-full bg-gray-500 transition duration-300"></div>
+                            <div id="line2"
+                                class="inset-0 w-6 h-0.5 mt-1.5 m-auto rounded-full bg-gray-500 transition duration-300">
+                            </div>
+                        </label>
+                    </div>
                 </div>
-
-                <div hidden class="w-full bg-white md:space-y-0 md:p-0 md:flex-nowrap md:bg-transparent lg:w-auto lg:flex">
-                    <div class="block w-full lg:items-center lg:flex">
-                        <ul class="space-y-6 pb-6 tracking-wide font-medium text-gray-600 lg:pb-0 lg:pr-6 lg:items-center lg:flex lg:space-y-0">
+                <label for="toggle_nav" class="fixed hidden peer-checked:block top-0 left-0 z-10 bg-gray-700 bg-opacity-30 w-full h-full"></label>
+                <div hidden class="w-5/6 
+                flex
+                z-30
+                transition-all
+                duration-500
+                peer-checked:left-0
+                p-6
+                h-full
+                max-w-sm
+                fixed top-0 
+                -left-full
+                bg-white 
+                lg:space-y-0 
+                flex-col
+                lg:h-auto
+                lg:p-0
+                lg:left-0
+                lg:max-w-none
+                lg:relative
+                lg:flex-row 
+                lg:bg-transparent 
+                lg:w-auto lg:flex">
+                    <div class="w-full h-full lg:h-auto lg:items-center flex lg:flex-row flex-col">
+                        <div class="flex w-full pb-6 lg:hidden min-h-[max-content]">
+                            <a href="#" aria-label="logo">
+                                <img src="images/logo.svg" class="w-36" alt="tailus logo" width="144" height="48">
+                            </a>
+                        </div>
+                        <ul class="gap-y-6 pb-6 h-full flex-col tracking-wide font-medium 
+                        text-gray-600 pt-3 lg:pt-0 lg:pb-0 
+                        lg:pr-6 
+                        lg:items-center 
+                        flex lg:gap-y-0 lg:flex-row">
                             <li>
                                 <a href="#" class="block md:px-3">
                                     <span>Product</span>
@@ -43,17 +78,19 @@
                             </li>
                         </ul>
 
-                        <ul class="border-t space-y-2 pt-2 lg:space-y-0 lg:space-x-2 lg:pt-0 lg:pl-2 lg:border-t-0 lg:border-l lg:items-center lg:flex">
-                            <li>
-                                <button type="button" title="Start buying" class="w-full py-3 px-6 rounded-md text-center transition active:bg-sky-200 focus:bg-sky-100 sm:w-max">
+                        <ul class="min-h-[max-content] border-t w-full lg:w-auto gap-y-2 pt-2 lg:gap-y-0 lg:gap-x-2 
+                        lg:pt-0 lg:pl-2 lg:border-t-0 
+                        lg:border-l lg:items-center flex flex-col sm:justify-center lg:flex-row">
+                            <li class="flex w-full">
+                                <button type="button" title="Start buying" class="w-full py-3 px-6 rounded-md text-center transition active:bg-sky-200 focus:bg-sky-100 lg:w-max">
                                     <span class="block text-cyan-600 font-semibold">
                                         Sign in
                                     </span>
                                 </button>
                             </li>
 
-                            <li>
-                                <button type="button" title="Start buying" class="w-full py-3 px-6 rounded-md text-center transition bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700 focus:bg-sky-600 sm:w-max">
+                            <li class="flex w-full">
+                                <button type="button" title="Start buying" class="w-full py-3 px-6 rounded-md text-center transition bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700 focus:bg-sky-600 lg:w-max">
                                     <span class="block text-white font-semibold">
                                         Try it for free
                                     </span>
@@ -66,6 +103,7 @@
         </div>
     </nav>
 </header>
+
 <div class="pt-32 pb-20 md:pt-40">
     <div class="container m-auto px-6 md:px-12 lg:px-6">
         <div class="lg:flex lg:items-center lg:gap-x-16">
@@ -80,19 +118,19 @@
                 <div class="grid grid-cols-3 space-x-4 md:space-x-6 md:flex">
                     <a aria-label="add to slack" href="#" class="p-4 border border-gray-200 rounded-md hover:border-cyan-400 hover:shadow-lg">
                         <div class="flex justify-center space-x-4">
-                            <img class="w-6" src="images/slack.png" alt="slack logo" loading="lazy" width="128" height="128">
+                            <img class="w-6 h-6" src="images/slack.png" alt="slack logo" loading="lazy" width="128" height="128">
                             <span class="hidden font-medium md:block">Add to Slack</span>
                         </div>
                     </a>    
                     <a aria-label="add to chat" href="#" class="p-4 border border-gray-200 rounded-md hover:border-green-400 hover:shadow-lg">
                         <div class="flex justify-center space-x-4">
-                            <img class="w-6" src="images/chat.png" alt="chat logo" loading="lazy" width="128" height="128">
+                            <img class="w-6 h-6" src="images/chat.png" alt="chat logo" loading="lazy" width="128" height="128">
                             <span class="hidden font-medium md:block">Add to Google Chat</span>
                         </div>
                     </a>   
                     <a aria-label="add to zoom" href="#" class="p-4 border border-gray-200 rounded-md hover:border-blue-400 hover:shadow-lg">
                         <div class="flex justify-center space-x-4">
-                            <img class="w-6" src="images/zoom.png" alt="chat logo" loading="lazy" width="128" height="128">
+                            <img class="w-6 h-6" src="images/zoom.png" alt="chat logo" loading="lazy" width="128" height="128">
                             <span class="hidden font-medium md:block">Add to Zoom</span>
                         </div>
                     </a>    
