@@ -2,7 +2,8 @@
     <header>
         <nav class="fixed z-10 w-full border-b bg-white md:absolute md:bg-transparent">
             <div class="container m-auto px-2 md:px-12 lg:px-7">
-                <div class="flex flex-wrap items-center justify-between py-4 gap-6 md:py-4 md:gap-0">
+                <div class="flex flex-wrap items-center justify-between py-4 gap-6 md:py-4 md:gap-0 relative">
+                    <input type="checkbox" name="toggle_nav" id="toggle_nav" class="hidden peer" checked>
                     <div class="w-full px-6 flex justify-between lg:w-max md:px-0">
                         <a href="#" aria-label="logo" class="flex space-x-2 items-center">
                             <div aria-hidden="true" class="flex space-x-1">
@@ -11,16 +12,35 @@
                             </div>
                             <span class="text-2xl font-bold text-gray-900">Arceelus</span>
                         </a>
-
-                        <button aria-label="humburger" id="hamburger" class="relative w-10 h-10 -mr-2 lg:hidden">
-                            <div aria-hidden="true" id="line" class="inset-0 w-6 h-0.5 m-auto rounded bg-yellow-900 transtion duration-300"></div>
-                            <div aria-hidden="true" id="line2" class="inset-0 w-6 h-0.5 mt-2 m-auto rounded bg-yellow-900 transtion duration-300"></div>
-                        </button>
+                        
+                        <div class="flex items-center lg:hidden max-h-10">
+                            <label for="toggle_nav" aria-label="humburger" id="hamburger" class="relative w-10 h-auto p-2">
+                                <div role="hidden" id="line"
+                                    class="inset-0 w-6 h-0.5 m-auto rounded-full bg-gray-500 transition duration-300"></div>
+                                <div role="hidden" id="line2"
+                                    class="inset-0 w-6 h-0.5 mt-1.5 m-auto rounded-full bg-gray-500 transition duration-300">
+                                </div>
+                            </label>
+                        </div>
                     </div>
 
-                    <div class="hidden w-full lg:flex flex-wrap justify-end items-center space-y-6 p-6 rounded-xl bg-white md:space-y-0 md:p-0 md:flex-nowrap md:bg-transparent lg:w-7/12">
-                        <div class="text-gray-600 lg:pr-4">
-                            <ul class="space-y-6 tracking-wide font-medium text-sm md:flex md:space-y-0">
+                    <div class="hidden absolute top-full transition 
+                    translate-y-1  
+                    lg:peer-checked:translate-y-0 lg:translate-y-0 left-0 
+                    lg:top-0 lg:relative peer-checked:flex w-full 
+                    lg:flex lg:flex-row flex-col 
+                    flex-wrap justify-end items-center 
+                    gap-6 p-6 rounded-xl 
+                    bg-white lg:gap-0 
+                    lg:p-0  
+                    lg:bg-transparent lg:w-7/12">
+                        <div class="text-gray-600 lg:pr-4 lg:w-auto w-full lg:pt-0">
+                            <ul class=" 
+                            tracking-wide 
+                            font-medium 
+                            text-sm flex-col flex 
+                            lg:flex-row
+                            gap-6 lg:gap-0">
                                 <li>
                                     <a href="#" class="block md:px-4 transition hover:text-yellow-700">
                                         <span>Home</span>
@@ -39,7 +59,7 @@
                             </ul>
                         </div>
 
-                        <div class="w-full space-y-2 border-yellow-200 lg:space-y-0 md:w-max lg:border-l">
+                        <div class="w-full space-y-2 border-yellow-200 lg:w-auto lg:space-y-0 sm:w-max lg:border-l">
                             <button type="button" title="Start buying" class="w-full py-3 px-6 text-center rounded-full transition active:bg-yellow-200 focus:bg-yellow-100 sm:w-max">
                                 <span class="block text-yellow-800 font-semibold text-sm">
                                     Sign up
@@ -78,3 +98,18 @@
         </div> 
     </div>
 </div>
+
+<!-- ========style.css======== -->
+<!-- 
+    @layer components{
+    #toggle_nav:checked ~ div #hamburger #line
+    {
+        @apply rotate-45 absolute
+    }
+
+    #toggle_nav:checked ~ div #hamburger #line2
+    {
+        @apply -rotate-45 absolute mt-1.5
+    }
+}
+ -->
