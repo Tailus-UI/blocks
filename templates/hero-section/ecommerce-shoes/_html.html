@@ -1,20 +1,37 @@
 <div class="relative w-full">
     <nav class="absolute w-full">
         <div class="container m-auto px-6 md:px-12 lg:px-7">
-            <div class="flex flex-wrap items-center justify-between py-6 gap-6 md:py-4 md:gap-0">
-                <div class="w-full px-6 flex justify-between md:w-max md:px-0">
+            <div class="flex flex-wrap items-center justify-between py-6 gap-6 md:py-4 md:gap-0 relative">
+                <input type="checkbox" name="toggle_nav" id="toggle_nav" class="peer hidden">
+                <div class="w-full flex justify-between md:w-max md:px-0">
                     <a href="#" aria-label="logo">
                         <img src="images/logo.svg" class="w-36 grayscale contrast-200" alt="tailus logo" width="144" height="68">
                     </a>
 
-                    <button aria-label="humburger" id="hamburger" class="relative w-10 h-10 -mr-2 md:hidden">
-                        <div aria-hidden="true" id="line" class="inset-0 w-6 h-0.5 m-auto rounded bg-gray-500 transtion duration-300"></div>
-                        <div aria-hidden="true" id="line2" class="inset-0 w-6 h-0.5 mt-2 m-auto rounded bg-gray-500 transtion duration-300"></div>
-                    </button>
+                    <div class="flex items-center md:hidden max-h-10">
+                        <label for="toggle_nav" aria-label="humburger" id="hamburger" class="relative w-10 h-auto p-2 z-50">
+                            <div role="hidden" id="line"
+                                class="inset-0 w-6 h-0.5 m-auto rounded-full bg-gray-500 transition duration-300"></div>
+                            <div role="hidden" id="line2"
+                                class="inset-0 w-6 h-0.5 mt-1.5 m-auto rounded-full bg-gray-500 transition duration-300">
+                            </div>
+                        </label>
+                    </div>
                 </div>
 
-                <div class="w-full flex flex-wrap justify-between items-center space-y-4 p-6 rounded-xl bg-white md:w-8/12 md:space-y-0 md:p-0 md:flex-nowrap md:bg-transparent lg:w-7/12">
-                    <div class="block w-full">
+                <label for="toggle_nav" class="fixed w-full z-30 h-full top-0 left-0 bg-gray-700 bg-opacity-40 hidden peer-checked:block"></label>
+
+                <div class="flex z-50 flex-col md:flex-row justify-between 
+                items-center gap-y-4 p-6 bg-white md:w-8/12 
+                md:gap-y-4 md:p-0 
+                md:bg-transparent lg:w-7/12 fixed top-0 -left-full transition-all duration-500 peer-checked:left-0 max-w-sm h-full 
+                md:left-0 md:h-auto w-4/5 md:max-w-none md:relative lg:first-letter:top-0">
+                    <div class="flex md:hidden w-full pb-5">
+                        <a href="#" aria-label="logo">
+                            <img src="images/logo.svg" class="w-36 grayscale contrast-200" alt="tailus logo" width="144" height="68">
+                        </a>
+                    </div>
+                    <div class="block w-full h-full md:h-auto">
                         <ul class="space-y-4 tracking-wide font-medium md:flex md:space-y-0">
                             <li>
                                 <a href="#" class="block md:px-3">
@@ -43,13 +60,13 @@
                         </ul>
                     </div>
 
-                    <div class="w-full space-y-4 md:w-max md:space-y-0 md:space-x-4 md:flex">
-                        <button type="button" title="Start buying" class="group w-full py-3 px-6 text-center transition active:bg-yellow-200 focus:bg-yellow-100 sm:w-max">
+                    <div class="w-full gap-y-4 md:w-max md:gap-y-0 md:gap-x-4 flex md:flex-row flex-col">
+                        <button type="button" title="Start buying" class="group w-full py-3 px-6 text-center transition active:bg-yellow-200 focus:bg-yellow-100 md:w-max">
                             <span class="block text-gray-700 font-semibold group-focus:text-yellow-700">
                                 Login
                             </span>
                         </button>
-                        <button type="button" title="Start buying" class="w-full py-3 px-6 text-center transition bg-gray-900 hover:bg-gray-800 active:bg-gray-700 focus:bg-gray-800 sm:w-max">
+                        <button type="button" title="Start buying" class="w-full py-3 px-6 text-center transition bg-gray-900 hover:bg-gray-800 active:bg-gray-700 focus:bg-gray-800 md:w-max">
                             <span class="block text-white font-semibold">
                                 Book Demo
                             </span>
@@ -110,3 +127,18 @@
         </div>
     </div>
 </div>
+
+<!-- style.css -->
+<!-- 
+@layer components{
+    #toggle_nav:checked ~ div #hamburger #line
+    {
+        @apply rotate-45 absolute
+    }
+
+    #toggle_nav:checked ~ div #hamburger #line2
+    {
+        @apply -rotate-45 absolute mt-1.5
+    }
+}
+-->
