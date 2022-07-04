@@ -12,21 +12,22 @@
                             </div>
                             <span class="text-2xl font-bold text-gray-900">Arceelus</span>
                         </a>
-                        
+
                         <div class="flex items-center lg:hidden max-h-10">
-                            <label for="toggle_nav" aria-label="humburger" id="hamburger" class="relative w-10 h-auto p-2">
-                                <div role="hidden" id="line"
-                                    class="inset-0 w-6 h-0.5 m-auto rounded-full bg-gray-500 transition duration-300"></div>
-                                <div role="hidden" id="line2"
-                                    class="inset-0 w-6 h-0.5 mt-1.5 m-auto rounded-full bg-gray-500 transition duration-300">
-                                </div>
+                            <label role="button" for="toggle_nav" aria-label="humburger" id="hamburger"
+                                class="relative  p-6 -mr-6">
+                                <div aria-hidden="true" id="line"
+                                    class="m-auto h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
+                                <div aria-hidden="true" id="line2"
+                                    class="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
                             </label>
                         </div>
                     </div>
 
-                    <div class="hidden absolute top-full transition 
-                    translate-y-1  
-                    lg:peer-checked:translate-y-0 lg:translate-y-0 left-0 
+
+
+
+                    <div class="hidden absolute top-full transition translate-y-1 lg:peer-checked:translate-y-0 lg:translate-y-0 left-0 
                     lg:top-0 lg:relative peer-checked:flex w-full 
                     lg:flex lg:flex-row flex-col 
                     flex-wrap justify-end items-center 
@@ -60,12 +61,14 @@
                         </div>
 
                         <div class="w-full space-y-2 border-yellow-200 lg:w-auto lg:space-y-0 sm:w-max lg:border-l">
-                            <button type="button" title="Start buying" class="w-full py-3 px-6 text-center rounded-full transition active:bg-yellow-200 focus:bg-yellow-100 sm:w-max">
+                            <button type="button" title="Start buying"
+                                class="w-full py-3 px-6 text-center rounded-full transition active:bg-yellow-200 focus:bg-yellow-100 sm:w-max">
                                 <span class="block text-yellow-800 font-semibold text-sm">
                                     Sign up
                                 </span>
                             </button>
-                            <button type="button" title="Start buying" class="w-full py-3 px-6 text-center rounded-full transition bg-yellow-300 hover:bg-yellow-100 active:bg-yellow-400 focus:bg-yellow-300 sm:w-max">
+                            <button type="button" title="Start buying"
+                                class="w-full py-3 px-6 text-center rounded-full transition bg-yellow-300 hover:bg-yellow-100 active:bg-yellow-400 focus:bg-yellow-300 sm:w-max">
                                 <span class="block text-yellow-900 font-semibold text-sm">
                                     Contact Us
                                 </span>
@@ -77,39 +80,45 @@
         </nav>
     </header>
     <div>
-        <img class="absolute w-full object-cover object-top h-[90vh] inset-0 top-[4.68rem]" src="images/bg2.webp" alt="image" loading="lazy">
+        <img class="absolute w-full object-cover object-top h-[90vh] inset-0 top-[4.68rem]" src="images/bg2.webp"
+            alt="image" loading="lazy">
         <div class="relative container border-l border-r m-auto px-6 md:px-12 lg:px-7">
             <div class="py-40 lg:py-56 md:w-9/12 lg:w-7/12 ml-auto">
-                <h1 class="text-gray-900 font-bold text-4xl md:text-6xl lg:text-4xl xl:text-6xl">Shaping a world with an endless <span class="text-yellow-600">imagination.</span></h1>
-                <p class="mt-8 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta!</p>
+                <h1 class="text-gray-900 font-bold text-4xl md:text-6xl lg:text-4xl xl:text-6xl">Shaping a world with an
+                    endless <span class="text-yellow-600">imagination.</span></h1>
+                <p class="mt-8 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam
+                    itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem
+                    harum omnis beatae ipsum soluta!</p>
                 <div class="mt-16 space-y-2 lg:space-y-0 md:w-max sm:space-x-6">
-                    <button type="button" title="Start buying" class="w-full py-3 px-6 text-center rounded-full transition border border-gray-200 active:bg-yellow-200 focus:bg-yellow-100 sm:w-max">
+                    <button type="button" title="Start buying"
+                        class="w-full py-3 px-6 text-center rounded-full transition border border-gray-200 active:bg-yellow-200 focus:bg-yellow-100 sm:w-max">
                         <span class="block text-yellow-800 font-semibold text-sm">
                             About us
                         </span>
                     </button>
-                    <button type="button" title="Start buying" class="w-full py-3 px-6 text-center rounded-full transition bg-yellow-300 hover:bg-yellow-100 active:bg-yellow-400 focus:bg-yellow-300 sm:w-max">
+                    <button type="button" title="Start buying"
+                        class="w-full py-3 px-6 text-center rounded-full transition bg-yellow-300 hover:bg-yellow-100 active:bg-yellow-400 focus:bg-yellow-300 sm:w-max">
                         <span class="block text-yellow-900 font-semibold text-sm">
                             Contact Us
                         </span>
                     </button>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
 </div>
 
 <!-- ========style.css======== -->
 <!-- 
-    @layer components{
+@layer components{
     #toggle_nav:checked ~ div #hamburger #line
     {
-        @apply rotate-45 absolute
+        @apply rotate-45 translate-y-1.5 
     }
 
     #toggle_nav:checked ~ div #hamburger #line2
     {
-        @apply -rotate-45 absolute mt-1.5
+        @apply -rotate-45 -translate-y-1
     }
 }
  -->
