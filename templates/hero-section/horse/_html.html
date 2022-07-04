@@ -11,11 +11,11 @@
                             </a>
                             
                             <div class="flex items-center md:hidden max-h-10">
-                                <label for="toggle_nav" aria-label="humburger" id="hamburger" class="relative w-10 h-auto p-2">
+                                <label role="button" for="toggle_nav" aria-label="humburger" id="hamburger" class="relative p-2">
                                     <div id="line"
-                                        class="inset-0 w-6 h-0.5 m-auto rounded-full bg-gray-500 transition duration-300"></div>
+                                        class="m-auto h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
                                     <div id="line2"
-                                        class="inset-0 w-6 h-0.5 mt-1.5 m-auto rounded-full bg-gray-500 transition duration-300">
+                                        class="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 transition duration-300">
                                     </div>
                                 </label>
                             </div>
@@ -48,7 +48,7 @@
                                     <li>
                                         <a href="#" class="block md:px-4 group">
                                             <div class="relative group
-                                                        before:absolute before:-bottom-2 md:before:-bottom-7 before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-green-800 before:transition before:scale-x-0 group-hover:before:scale-x-100">
+                                                        before:absolute before:-bottom-2 md:before:-bottom-7 before:w-full before:h-0.5 before:origin-left before:mt-auto before:rounded-full before:bg-green-800 before:transition before:scale-x-0 group-hover:before:scale-x-100">
                                                 <span class="group-hover:text-green-500">Link</span>
                                             </div>
                                         </a>
@@ -131,15 +131,15 @@
 
 <!-- =========tailwindcss========= -->
 <!-- 
-    @layer components{
+@layer components{
     #toggle_nav:checked ~ div #hamburger #line
     {
-        @apply rotate-45 absolute
+        @apply rotate-45 translate-y-1.5
     }
 
     #toggle_nav:checked ~ div #hamburger #line2
     {
-        @apply -rotate-45 absolute mt-1.5
+        @apply -rotate-45 -translate-y-1
     } 
 }
  -->
