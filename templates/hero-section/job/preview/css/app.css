@@ -6,6 +6,7 @@ body{
     font-family: 'Urbanist', sans-serif;
 }
 
+
 @layer components{
     .sticky-nav{
         @apply bg-white bg-opacity-40 backdrop-blur-md
