@@ -25,17 +25,17 @@
                         </a>
 
                         <div class="flex items-center lg:hidden max-h-10">
-                            <label for="toggle_nav" aria-label="humburger" id="hamburger" class="relative w-10 h-auto p-2">
-                                <div role="hidden" id="line"
-                                    class="inset-0 w-6 h-0.5 m-auto rounded-full bg-gray-500 transition duration-300"></div>
-                                <div role="hidden" id="line2"
-                                    class="inset-0 w-6 h-0.5 mt-1.5 m-auto rounded-full bg-gray-500 transition duration-300">
+                            <label role="button" for="toggle_nav" aria-label="humburger" id="hamburger" class="relative w-10 h-auto p-2">
+                                <div id="line"
+                                    class="m-auto h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
+                                <div id="line2"
+                                    class="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 transition duration-300">
                                 </div>
                             </label>
                         </div>
                     </div>
 
-                    <label for="toggle_nav" class="hidden peer-checked:block fixed w-full h-full left-0 top-0 z-10 bg-yellow-200 bg-opacity-30 backdrop-blur backdrop-filter"></label>
+                    <label role="button" for="toggle_nav" class="hidden peer-checked:block fixed w-full h-full left-0 top-0 z-10 bg-yellow-200 bg-opacity-30 backdrop-blur backdrop-filter"></label>
                     <div class="hidden peer-checked:flex w-full flex-col lg:flex lg:flex-row justify-end z-30 items-center gap-y-6 p-6 rounded-xl bg-white lg:gap-y-0 lg:p-0 md:flex-nowrap lg:bg-transparent lg:w-7/12">
                         <div class="text-gray-600 lg:pr-4 w-full">
                             <ul class="tracking-wide font-medium  text-sm 
@@ -83,9 +83,10 @@
                         <form action="" class="w-full mt-12">
                             <div class="relative flex p-1 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
                                 <div id="categories" class="hidden p-3 rounded-full bg-transparent w-80 relative md:p-4 md:flex justify-between items-center select-none">
-                                    <input type="checkbox" name="" id="toggleLstCat" class="peer hidden outline-none">
-                                    <input type="text" name="" id="catName" value="FastFood" class="pl-3 w-full bg-white text-base font-medium cursor-pointer" readonly>
-                                    <label for="toggleLstCat" class="absolute top-0 left-0 w-full h-full"></label>
+                                    
+                                    <input type="text" name="catName" id="catName" value="FastFood" class="pl-3 w-full bg-white text-base font-medium cursor-pointer" readonly>
+                                    <input type="checkbox" name="toggleLstCat" id="toggleLstCat" class="peer hidden outline-none">
+                                    <label role="button" for="toggleLstCat" class="absolute top-0 left-0 w-full h-full"></label>
                                     <span class="min-w-max">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -113,7 +114,7 @@
                         <p class="mt-8 text-gray-700 lg:w-10/12">Sit amet consectetur adipisicing elit. <a href="#" class="text-yellow-700">connection</a> tenetur nihil quaerat suscipit, sunt dignissimos.</p>
                     </div>
                     <div class="ml-auto -mb-24 lg:-mb-56 lg:w-6/12">
-                        <img src="images/food.webp" class="relative" alt="food illustration" loading="lazy" width="4500" height="4500">
+                        <img src="images/food.webp" class="relative w-full h-auto" alt="food illustration" loading="lazy" width="100" height="450">
                     </div>
                 </div>
             </div>
