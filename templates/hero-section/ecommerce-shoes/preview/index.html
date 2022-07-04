@@ -24,17 +24,17 @@
                         </a>
 
                         <div class="flex items-center md:hidden max-h-10">
-                            <label for="toggle_nav" aria-label="humburger" id="hamburger" class="relative w-10 h-auto p-2 z-50">
-                                <div role="hidden" id="line"
-                                    class="inset-0 w-6 h-0.5 m-auto rounded-full bg-gray-500 transition duration-300"></div>
-                                <div role="hidden" id="line2"
-                                    class="inset-0 w-6 h-0.5 mt-1.5 m-auto rounded-full bg-gray-500 transition duration-300">
+                            <label role="button" for="toggle_nav" aria-label="humburger" id="hamburger" class="relative z-40 bg-white rounded px-2 py-3 sm:-mr-6">
+                                <div id="line"
+                                    class="m-auto h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
+                                <div id="line2"
+                                    class="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 transition duration-300">
                                 </div>
                             </label>
                         </div>
                     </div>
 
-                    <label for="toggle_nav" class="fixed w-full z-30 h-full top-0 left-0 bg-gray-700 bg-opacity-40 hidden peer-checked:block"></label>
+                    <label role="button" for="toggle_nav" class="fixed w-full z-30 h-full top-0 left-0 bg-gray-700 bg-opacity-40 hidden peer-checked:block md:peer-checked:hidden"></label>
 
                     <div class="flex z-50 flex-col md:flex-row justify-between 
                     items-center gap-y-4 p-6 bg-white md:w-8/12 
