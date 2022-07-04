@@ -9,11 +9,11 @@ body{
 @layer components{
     #toggleNav:checked ~ .block-endnav #hamburger #line
     {
-        @apply rotate-45 absolute
+        @apply rotate-45 translate-y-1.5 
     }
 
     #toggleNav:checked ~ .block-endnav #hamburger #line2
     {
-        @apply -rotate-45 absolute mt-1.5
+        @apply -rotate-45 -translate-y-1
     }
 }
