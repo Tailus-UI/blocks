@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Urbanist', sans-serif;
+body{
+    font-family: 'Urbanist', sans-serif;
+}
+
+@layer components{
+    #toggle_nav:checked ~ div #hamburger #line
+    {
+        @apply rotate-45 translate-y-1.5 
+    }
+
+    #toggle_nav:checked ~ div #hamburger #line2
+    {
+        @apply -rotate-45 -translate-y-1
+    }
 }
