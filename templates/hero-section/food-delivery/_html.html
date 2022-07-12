@@ -1,130 +1,122 @@
 <div class="relative w-full">
-  <nav class="fixed z-10 w-full bg-white md:absolute md:bg-transparent">
-    <div class="container m-auto px-2 md:px-12 lg:px-7">
-      <div class="flex flex-wrap items-center justify-between gap-6 py-3 md:gap-0 md:py-4">
-        <div class="flex w-full justify-between px-6 md:px-0 lg:w-max">
-          <a href="#" aria-label="logo" class="flex items-center space-x-2">
-            <img src="images/icon.png" class="w-12" alt="tailus logo" width="144" height="133" />
-            <span class="text-2xl font-bold text-yellow-900"
-              >Tailus <span class="text-yellow-700">Feedus</span></span
-            >
-          </a>
+    <nav class="fixed z-10 w-full bg-white md:absolute md:bg-transparent">
+        <div class="container m-auto px-2 md:px-12 lg:px-7">
+            <div class="flex flex-wrap items-center justify-between py-3 gap-6 md:py-4 md:gap-0">
+                <input type="checkbox" name="toggle_nav" id="toggle_nav" class="peer hidden">
+                <div class="w-full px-6 flex justify-between lg:w-max md:px-0 z-30">
+                    <a href="#" aria-label="logo" class="flex space-x-2 items-center">
+                        <img src="images/icon.png" class="w-12" alt="tailus logo" width="144" height="133">
+                        <span class="text-2xl font-bold text-yellow-900">Tailus <span class="text-yellow-700">Feedus</span></span>
+                    </a>
 
-          <button aria-label="humburger" id="hamburger" class="relative -mr-2 h-10 w-10 lg:hidden">
-            <div
-              aria-hidden="true"
-              id="line"
-              class="transtion inset-0 m-auto h-0.5 w-6 rounded bg-yellow-900 duration-300"
-            ></div>
-            <div
-              aria-hidden="true"
-              id="line2"
-              class="transtion inset-0 m-auto mt-2 h-0.5 w-6 rounded bg-yellow-900 duration-300"
-            ></div>
-          </button>
-        </div>
+                    <div class="flex items-center lg:hidden max-h-10">
+                        <label role="button" for="toggle_nav" aria-label="humburger" id="hamburger" class="relative w-10 h-auto p-2">
+                            <div id="line"
+                                class="m-auto h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
+                            <div id="line2"
+                                class="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 transition duration-300">
+                            </div>
+                        </label>
+                    </div>
+                </div>
 
-        <div
-          class="hidden w-full flex-wrap items-center justify-end space-y-6 rounded-xl bg-white p-6 md:flex-nowrap md:space-y-0 md:bg-transparent md:p-0 lg:flex lg:w-7/12"
-        >
-          <div class="text-gray-600 lg:pr-4">
-            <ul class="space-y-6 text-sm font-medium tracking-wide md:flex md:space-y-0">
-              <li>
-                <a href="#" class="block transition hover:text-yellow-700 md:px-4">
-                  <span>I've a restaurant</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="block transition hover:text-yellow-700 md:px-4">
-                  <span>Wishlist</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="block transition hover:text-yellow-700 md:px-4">
-                  <span>Cart</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+                <label role="button" for="toggle_nav" class="hidden peer-checked:block fixed w-full h-full left-0 top-0 z-10 bg-yellow-200 bg-opacity-30 backdrop-blur backdrop-filter"></label>
+                <div class="hidden peer-checked:flex w-full flex-col lg:flex lg:flex-row justify-end z-30 items-center gap-y-6 p-6 rounded-xl bg-white lg:gap-y-0 lg:p-0 md:flex-nowrap lg:bg-transparent lg:w-7/12">
+                    <div class="text-gray-600 lg:pr-4 w-full">
+                        <ul class="tracking-wide font-medium  text-sm 
+                        flex flex-col gap-y-6 lg:gap-y-0 lg:flex-row w-full">
+                            <li>
+                                <a href="#" class="block md:px-4 transition hover:text-yellow-700">
+                                    <span>I've a restaurant</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block md:px-4 transition hover:text-yellow-700">
+                                    <span>Wishlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block md:px-4 transition hover:text-yellow-700">
+                                    <span>Cart</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-          <div class="w-full space-y-2 border-yellow-200 md:w-max lg:space-y-0 lg:border-l">
-            <button
-              type="button"
-              title="Start buying"
-              class="w-full rounded-full py-3 px-6 text-center transition focus:bg-yellow-100 active:bg-yellow-200 sm:w-max"
-            >
-              <span class="block text-sm font-semibold text-yellow-800"> Sign up </span>
-            </button>
-            <button
-              type="button"
-              title="Start buying"
-              class="w-full rounded-full bg-yellow-300 py-3 px-6 text-center transition hover:bg-yellow-100 focus:bg-yellow-300 active:bg-yellow-400 sm:w-max"
-            >
-              <span class="block text-sm font-semibold text-yellow-900"> Login </span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <div class="relative bg-yellow-50">
-    <div class="container m-auto px-6 pt-32 md:px-12 lg:px-7 lg:pt-[4.8rem]">
-      <div class="flex flex-wrap items-center px-2 md:px-0">
-        <div class="relative lg:w-6/12 lg:py-24 xl:py-32">
-          <h1 class="text-4xl font-bold text-yellow-900 md:text-5xl lg:w-10/12">
-            Your favorite dishes, right at your door
-          </h1>
-          <form action="" class="mt-12 w-full">
-            <div
-              class="relative flex rounded-full border border-yellow-200 bg-white p-1 shadow-md md:p-2"
-            >
-              <select
-                class="hidden rounded-full bg-transparent p-3 md:block md:p-4"
-                name="domain"
-                id="domain"
-              >
-                <option value="design">FastFood</option>
-                <option value="development">Restaurant</option>
-                <option value="marketing">Marketing</option>
-              </select>
-              <input placeholder="Your favorite food" class="w-full rounded-full p-4" type="text" />
-              <button
-                type="button"
-                title="Start buying"
-                class="ml-auto rounded-full bg-gradient-to-b from-yellow-200 to-yellow-300 py-3 px-6 text-center transition hover:to-red-300 focus:from-red-400 active:from-yellow-400 md:px-12"
-              >
-                <span class="hidden font-semibold text-yellow-900 md:block"> Search </span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="mx-auto w-5 text-yellow-900 md:hidden"
-                  fill="currentColor"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                  />
-                </svg>
-              </button>
+                    <div class="w-full min-w-max space-y-2 
+                    border-yellow-200 lg:space-y-0 sm:w-max lg:border-l">
+                        <button type="button" title="Start buying" class="w-full py-3 px-6 text-center rounded-full transition active:bg-yellow-200 focus:bg-yellow-100 sm:w-max">
+                            <span class="block text-yellow-800 font-semibold text-sm">
+                                Sign up
+                            </span>
+                        </button>
+                        <button type="button" title="Start buying" class="w-full py-3 px-6 text-center rounded-full transition bg-yellow-300 hover:bg-yellow-100 active:bg-yellow-400 focus:bg-yellow-300 sm:w-max">
+                            <span class="block text-yellow-900 font-semibold text-sm">
+                                Login
+                            </span>
+                        </button>
+                    </div>
+                </div>
             </div>
-          </form>
-          <p class="mt-8 text-gray-700 lg:w-10/12">
-            Sit amet consectetur adipisicing elit.
-            <a href="#" class="text-yellow-700">connection</a> tenetur nihil quaerat suscipit, sunt
-            dignissimos.
-          </p>
         </div>
-        <div class="ml-auto -mb-24 lg:-mb-56 lg:w-6/12">
-          <img
-            src="images/food.webp"
-            class="relative"
-            alt="food illustration"
-            loading="lazy"
-            width="4500"
-            height="4500"
-          />
+    </nav>
+    <div class="relative bg-yellow-50">
+        <div class="container m-auto px-6 pt-32 md:px-12 lg:pt-[4.8rem] lg:px-7">
+            <div class="flex items-center flex-wrap px-2 md:px-0">
+                <div class="relative lg:w-6/12 lg:py-24 xl:py-32">
+                    <h1 class="font-bold text-4xl text-yellow-900 md:text-5xl lg:w-10/12">Your favorite dishes, right at your door</h1>
+                    <form action="" class="w-full mt-12">
+                        <div class="relative flex p-1 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
+                            <div id="categories" class="hidden p-3 rounded-full bg-transparent w-80 relative md:p-4 md:flex justify-between items-center select-none">
+                                
+                                <input type="text" name="catName" id="catName" value="FastFood" class="pl-3 w-full bg-white text-base font-medium cursor-pointer" readonly>
+                                <input type="checkbox" name="toggleLstCat" id="toggleLstCat" class="peer hidden outline-none">
+                                <label role="button" for="toggleLstCat" class="absolute top-0 left-0 w-full h-full"></label>
+                                <span class="min-w-max">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <div id="categorieLst" class="absolute transition-all duration-500 ease-in-out translate-y-10 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible peer-checked:translate-y-1 top-full left-0 w-full bg-white border border-yellow-200 shadow-md rounded-lg py-2">
+                                    <ul class="flex flex-col w-full">
+                                        <li class="cursor-pointer transition hover:bg-gray-100 hover:bg-opacity-80 flex px-5 py-2">FastFood</li>
+                                        <li class="cursor-pointer transition hover:bg-gray-100 hover:bg-opacity-80 flex px-5 py-2">Restaurant</li>
+                                        <li class="cursor-pointer transition hover:bg-gray-100 hover:bg-opacity-80 flex px-5 py-2">Marketing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <input placeholder="Your favorite food" class="w-full p-4 rounded-full outline-none" type="text">
+                            <button type="button" title="Start buying" class="ml-auto py-3 px-6 rounded-full text-center transition bg-gradient-to-b from-yellow-200 to-yellow-300 hover:to-red-300 active:from-yellow-400 focus:from-red-400 md:px-12">
+                                <span class="hidden text-yellow-900 font-semibold md:block">
+                                    Search
+                                </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 mx-auto text-yellow-900 md:hidden" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <p class="mt-8 text-gray-700 lg:w-10/12">Sit amet consectetur adipisicing elit. <a href="#" class="text-yellow-700">connection</a> tenetur nihil quaerat suscipit, sunt dignissimos.</p>
+                </div>
+                <div class="ml-auto -mb-24 lg:-mb-56 lg:w-6/12">
+                    <img src="images/food.webp" class="relative w-full h-auto" alt="food illustration" loading="lazy" width="100" height="450">
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
+
+<!-- ===========style.css=========== -->
+<!-- 
+@layer components{
+    #toggle_nav:checked ~ div #hamburger #line
+    {
+        @apply rotate-45 translate-y-1.5
+    }
+
+    #toggle_nav:checked ~ div #hamburger #line2
+    {
+        @apply -rotate-45 -translate-y-1
+    } 
+}
+ -->
