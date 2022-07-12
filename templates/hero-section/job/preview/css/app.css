@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Urbanist', sans-serif;
+body{
+    font-family: 'Urbanist', sans-serif;
+}
+
+
+@layer components{
+    .sticky-nav{
+        @apply bg-white bg-opacity-40 backdrop-blur-md
+    }
+    .sticky-nav #navBox{
+        @apply bg-transparent bg-opacity-0 backdrop-blur-none;
+    }
 }
