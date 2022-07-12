@@ -1,173 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="hero job section" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="hero ecommerce-shoes">
 
-    <title>Tailus blocks | hero job section</title>
+    <title>Tailus blocks | Hero ecommerce-shoes</title>
 
-    <link rel="stylesheet" href="css/tailus.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/tailus.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
   </head>
 
   <body class="bg-white">
     <div class="relative w-full">
-      <nav class="absolute w-full">
-        <div class="container m-auto px-6 md:px-12 lg:px-7">
-          <div class="flex flex-wrap items-center justify-between gap-6 py-6 md:gap-0 md:py-4">
-            <div class="flex w-full justify-between px-6 md:w-max md:px-0">
-              <a href="#" aria-label="logo">
-                <img
-                  src="images/logo.svg"
-                  class="w-36 contrast-200 grayscale"
-                  alt="tailus logo"
-                  width="144"
-                  height="68"
-                />
-              </a>
+        <nav class="absolute w-full">
+            <div class="container m-auto px-6 md:px-12 lg:px-7">
+                <div class="flex flex-wrap items-center justify-between py-6 gap-6 md:py-4 md:gap-0 relative">
+                    <input type="checkbox" name="toggle_nav" id="toggle_nav" class="peer hidden">
+                    <div class="w-full flex justify-between md:w-max md:px-0">
+                        <a href="#" aria-label="logo">
+                            <img src="images/logo.svg" class="w-36 grayscale contrast-200" alt="tailus logo" width="144" height="68">
+                        </a>
 
-              <button
-                aria-label="humburger"
-                id="hamburger"
-                class="relative -mr-2 h-10 w-10 md:hidden"
-              >
-                <div
-                  aria-hidden="true"
-                  id="line"
-                  class="transtion inset-0 m-auto h-0.5 w-6 rounded bg-gray-500 duration-300"
-                ></div>
-                <div
-                  aria-hidden="true"
-                  id="line2"
-                  class="transtion inset-0 m-auto mt-2 h-0.5 w-6 rounded bg-gray-500 duration-300"
-                ></div>
-              </button>
+                        <div class="flex items-center md:hidden max-h-10">
+                            <label role="button" for="toggle_nav" aria-label="humburger" id="hamburger" class="relative z-40 bg-white rounded px-2 py-3 sm:-mr-6">
+                                <div id="line"
+                                    class="m-auto h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
+                                <div id="line2"
+                                    class="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 transition duration-300">
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <label role="button" for="toggle_nav" class="fixed w-full z-30 h-full top-0 left-0 bg-gray-700 bg-opacity-40 hidden peer-checked:block md:peer-checked:hidden"></label>
+
+                    <div class="flex z-50 flex-col md:flex-row justify-between 
+                    items-center gap-y-4 p-6 bg-white md:w-8/12 
+                    md:gap-y-4 md:p-0 
+                    md:bg-transparent lg:w-7/12 fixed top-0 -left-full transition-all duration-500 peer-checked:left-0 max-w-sm h-full 
+                    md:left-0 md:h-auto w-4/5 md:max-w-none md:relative lg:first-letter:top-0">
+                        <div class="flex md:hidden w-full pb-5">
+                            <a href="#" aria-label="logo">
+                                <img src="images/logo.svg" class="w-36 grayscale contrast-200" alt="tailus logo" width="144" height="68">
+                            </a>
+                        </div>
+                        <div class="block w-full h-full md:h-auto">
+                            <ul class="space-y-4 tracking-wide font-medium md:flex md:space-y-0">
+                                <li>
+                                    <a href="#" class="block md:px-3">
+                                        <div class="relative text-yellow-800
+                                                    before:absolute before:-inset-2 before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-yellow-800">
+                                            <span>Nike</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block md:px-3 group">
+                                        <div class="relative text-gray-600
+                                                    before:absolute before:-inset-2 before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-yellow-800 before:transition before:scale-x-0 group-hover:before:scale-x-100">
+                                            <span class="transition group-hover:text-yellow-700">Adiddas</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block md:px-3 group">
+                                        <div class="relative text-gray-600
+                                                    before:absolute before:-inset-2 before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-yellow-800 before:transition before:scale-x-0 group-hover:before:scale-x-100">
+                                            <span class="transition group-hover:text-yellow-700">Cart</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="w-full gap-y-4 md:w-max md:gap-y-0 md:gap-x-4 flex md:flex-row flex-col">
+                            <button type="button" title="Start buying" class="group w-full py-3 px-6 text-center transition active:bg-yellow-200 focus:bg-yellow-100 md:w-max">
+                                <span class="block text-gray-700 font-semibold group-focus:text-yellow-700">
+                                    Login
+                                </span>
+                            </button>
+                            <button type="button" title="Start buying" class="w-full py-3 px-6 text-center transition bg-gray-900 hover:bg-gray-800 active:bg-gray-700 focus:bg-gray-800 md:w-max">
+                                <span class="block text-white font-semibold">
+                                    Book Demo
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </nav>
+        <div class="min-h-screen flex">
+            <div class="container m-auto px-6 py-40 md:px-12 lg:py-0 lg:px-7">
+                <div class="flex items-center flex-wrap gap-12 lg:gap-0">
+                    <div class="lg:w-5/12 space-y-8">
+                        <span class="flex space-x-2">
+                            <span class="block w-14 mb-2 border-b-2 border-gray-600"></span>
+                            <span class="font-medium text-gray-600">Office Space</span>
+                        </span>
+                        <h1 class="text-4xl font-bold md:text-6xl">The New <br> Way To Discover</h1>
+                        <p class="text-xl text-gray-700">Booking Company-Wide Savings, Invoicing and reporting docs.</p>
+                        
+                        <div class="flex space-x-4">
+                            <button type="button" title="Start buying" class="w-full py-3 px-6 text-center transition bg-gray-900 hover:bg-gray-800 active:bg-gray-700 focus:bg-gray-800 sm:w-max">
+                                <span class="block text-white font-semibold">
+                                    Book Demo
+                                </span>
+                            </button>
+                            <button type="button" title="Start buying" class="group w-full py-3 px-6 text-center transition active:bg-yellow-200 focus:bg-yellow-100 sm:w-max">
+                                <span class="block text-gray-700 font-semibold group-focus:text-yellow-700">
+                                    Our showreel
+                                </span>
+                            </button>
+                        </div>
+                    </div>
 
-            <div
-              class="flex w-full flex-wrap items-center justify-between space-y-4 rounded-xl bg-white p-6 md:w-8/12 md:flex-nowrap md:space-y-0 md:bg-transparent md:p-0 lg:w-7/12"
-            >
-              <div class="block w-full">
-                <ul class="space-y-4 font-medium tracking-wide md:flex md:space-y-0">
-                  <li>
-                    <a href="#" class="block md:px-3">
-                      <div
-                        class="relative text-yellow-800 before:absolute before:-inset-2 before:mx-auto before:mt-auto before:h-0.5 before:w-full before:rounded-full before:bg-yellow-800"
-                      >
-                        <span>Nike</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="group block md:px-3">
-                      <div
-                        class="relative text-gray-600 before:absolute before:-inset-2 before:mx-auto before:mt-auto before:h-0.5 before:w-full before:scale-x-0 before:rounded-full before:bg-yellow-800 before:transition group-hover:before:scale-x-100"
-                      >
-                        <span class="transition group-hover:text-yellow-700">Adiddas</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="group block md:px-3">
-                      <div
-                        class="relative text-gray-600 before:absolute before:-inset-2 before:mx-auto before:mt-auto before:h-0.5 before:w-full before:scale-x-0 before:rounded-full before:bg-yellow-800 before:transition group-hover:before:scale-x-100"
-                      >
-                        <span class="transition group-hover:text-yellow-700">Cart</span>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                    <div class="hidden relative md:block lg:w-7/12">
+                        <div aria-hidden="true" class="absolute inset-0 m-auto w-[30rem] h-[30rem] rounded-full bg-yellow-200">
 
-              <div class="w-full space-y-4 md:flex md:w-max md:space-y-0 md:space-x-4">
-                <button
-                  type="button"
-                  title="Start buying"
-                  class="group w-full py-3 px-6 text-center transition focus:bg-yellow-100 active:bg-yellow-200 sm:w-max"
-                >
-                  <span class="block font-semibold text-gray-700 group-focus:text-yellow-700">
-                    Login
-                  </span>
-                </button>
-                <button
-                  type="button"
-                  title="Start buying"
-                  class="w-full bg-gray-900 py-3 px-6 text-center transition hover:bg-gray-800 focus:bg-gray-800 active:bg-gray-700 sm:w-max"
-                >
-                  <span class="block font-semibold text-white"> Book Demo </span>
-                </button>
-              </div>
+                        </div>
+                        <img src="images/shoes.png" class="relative ml-auto" alt="">
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="absolute bottom-8 w-full">
+                <div class="container m-auto px-6 flex items-end justify-between md:px-12 lg:px-7">
+                    <div class="hidden space-x-4 md:flex md:items-center">
+                        <img class="w-14 h-14 rounded-full object-cover" src="images/user.png" alt="">
+                        <div class="text-gray-600">
+                            <span class="text-sm">Question ?</span>
+                            <p class="font-semibold text-gray-700">Talk to our assistant</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class="hover:text-yellow-700">Facebook /</a>
+                        <a href="#" class="hover:text-yellow-700">YouTube / </a>
+                        <a href="#" class="hover:text-yellow-700">Twitter</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </nav>
-      <div class="flex min-h-screen">
-        <div class="container m-auto px-6 py-40 md:px-12 lg:py-0 lg:px-7">
-          <div class="flex flex-wrap items-center gap-12 lg:gap-0">
-            <div class="space-y-8 lg:w-5/12">
-              <span class="flex space-x-2">
-                <span class="mb-2 block w-14 border-b-2 border-gray-600"></span>
-                <span class="font-medium text-gray-600">Office Space</span>
-              </span>
-              <h1 class="text-4xl font-bold md:text-6xl">
-                The New <br />
-                Way To Discover
-              </h1>
-              <p class="text-xl text-gray-700">
-                Booking Company-Wide Savings, Invoicing and reporting docs.
-              </p>
-
-              <div class="flex space-x-4">
-                <button
-                  type="button"
-                  title="Start buying"
-                  class="w-full bg-gray-900 py-3 px-6 text-center transition hover:bg-gray-800 focus:bg-gray-800 active:bg-gray-700 sm:w-max"
-                >
-                  <span class="block font-semibold text-white"> Book Demo </span>
-                </button>
-                <button
-                  type="button"
-                  title="Start buying"
-                  class="group w-full py-3 px-6 text-center transition focus:bg-yellow-100 active:bg-yellow-200 sm:w-max"
-                >
-                  <span class="block font-semibold text-gray-700 group-focus:text-yellow-700">
-                    Our showreel
-                  </span>
-                </button>
-              </div>
-            </div>
-
-            <div class="relative hidden md:block lg:w-7/12">
-              <div
-                aria-hidden="true"
-                class="absolute inset-0 m-auto h-[30rem] w-[30rem] rounded-full bg-yellow-200"
-              ></div>
-              <img src="images/shoes.png" class="relative ml-auto" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="absolute bottom-8 w-full">
-          <div class="container m-auto flex items-end justify-between px-6 md:px-12 lg:px-7">
-            <div class="hidden space-x-4 md:flex md:items-center">
-              <img class="h-14 w-14 rounded-full object-cover" src="images/user.png" alt="" />
-              <div class="text-gray-600">
-                <span class="text-sm">Question ?</span>
-                <p class="font-semibold text-gray-700">Talk to our assistant</p>
-              </div>
-            </div>
-            <div>
-              <a href="#" class="hover:text-yellow-700">Facebook /</a>
-              <a href="#" class="hover:text-yellow-700">YouTube / </a>
-              <a href="#" class="hover:text-yellow-700">Twitter</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </body>
 </html>
