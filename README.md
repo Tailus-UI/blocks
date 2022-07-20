@@ -20,3 +20,5 @@ All blocks are supported by your favorite Browsers.
 ## Contibute
 
 If you're interested in contributing to Tailus Blocks, please read our [contributing docs](CONTRIBUTING.md) before submitting a pull request.
+
+![Alt](https://repobeats.axiom.co/api/embed/e90965f018bc91b388d982a1efa482a7ff72184c.svg "Repobeats analytics image")
