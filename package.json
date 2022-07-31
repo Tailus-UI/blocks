@@ -4,14 +4,16 @@
   "description": "free blocks",
   "main": "index.js",
   "repository": "https://github.com/Tailus-UI/blocks",
-  "author": "Tailus",
-  "license": "MIT",
-  "private": true,
+  "author": "Bernard Ng & Méschac Irung",
+  "license": "Creative Common",
+  "private": false,
   "dependencies": {
     "@symfony/webpack-encore": "^1.6.1",
-    "autoprefixer": "^10.3.7",
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.14",
     "postcss-import": "^14.0.2",
-    "tailwindcss": "^2.2.17"
+    "tailwindcss": "^3.1.7",
+    "webpack": "^5.74.0"
   },
   "scripts": {
     "serve": "http-server templates/",
