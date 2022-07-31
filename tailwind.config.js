@@ -1,18 +1,15 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  mode: 'jit',
-  purge: {
-    content : ['./templates/**/*.html'],
-    safelist : [
-      'translate-y-1.5',
-      '-translate-y-1',
-      'rotate-45',
-      '-rotate-45',
-      '!bg-yellow-900',
-      'border-yellow-300'
-    ]
-  },
+  content : ['./templates/**/*.html'],
+  safelist : [
+    'translate-y-1.5',
+    '-translate-y-1',
+    'rotate-45',
+    '-rotate-45',
+    '!bg-yellow-900',
+    'border-yellow-300'
+  ],
   presets: [],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
