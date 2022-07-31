@@ -14,7 +14,7 @@ module.exports = {
     ]
   },
   presets: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     screens: {
       sm: '640px',
@@ -29,7 +29,18 @@ module.exports = {
 
       black: colors.black,
       white: colors.white,
-      gray: colors.blueGray,
+      gray: {
+        50: "#FBFBFB",
+        100: "#ECEFF1",
+        200: "#F0F0F0",
+        300: "#BAC8CC",
+        400: "#767E81",
+        500: "#64777C",
+        600: "#4A5457",
+        700: "#2B3537",
+        800: "#1B2022",
+        900: "#15191B",
+      },
       red: colors.red,
       yellow: colors.amber,
       green: colors.emerald,
