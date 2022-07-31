@@ -1,195 +1,180 @@
-<header>
-    <nav class="fixed w-full bg-white">
+<body class="bg-white dark:bg-gray-900">
+    <header>
+        <nav class="fixed z-10 w-full bg-white dark:bg-gray-900">
+            <div class="container m-auto px-6 md:px-12 lg:px-6">
+                <div class="flex flex-wrap items-center justify-between py-6 gap-6 md:py-4 md:gap-0">
+                    <input type="checkbox" name="toggle_nav" id="toggle_nav" class="peer hidden">
+                    <div class="w-full flex justify-between lg:w-auto">
+                        <a class="relative z-10" href="#" aria-label="logo">
+                            <img src="images/logo.svg" class="w-36 dark:hidden" alt="tailus logo" width="144" height="48">
+                            <img src="images/logo-white.svg" class="w-36 hidden dark:block" alt="tailus logo" width="144" height="48">
+                        </a>
+                        <div class="flex items-center lg:hidden max-h-10">
+                            <label role="button" for="toggle_nav" aria-label="humburger" id="hamburger" class="relative h-auto py-3 z-40">
+                                <div id="line"
+                                    class="m-auto h-0.5 w-6 rounded bg-sky-900 dark:bg-gray-300 transition duration-300"></div>
+                                <div id="line2"
+                                    class="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 dark:bg-gray-300 transition duration-300">
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <label for="toggle_nav" class="fixed hidden peer-checked:block top-0 left-0 z-10 bg-gray-700 bg-opacity-30 w-full h-full"></label>
+                    <div hidden class="w-5/6 
+                    flex
+                    transition-all
+                    duration-500
+                    peer-checked:left-0
+                    p-6
+                    h-full
+                    max-w-sm
+                    fixed top-0 
+                    -left-full
+                    bg-white 
+                    dark:bg-gray-800
+                    lg:space-y-0 
+                    flex-col
+                    lg:h-auto
+                    lg:p-0
+                    lg:left-0
+                    lg:max-w-none
+                    lg:relative
+                    lg:flex-row 
+                    lg:bg-transparent 
+                    lg:w-auto lg:flex">
+                        <div class="w-full h-full lg:h-auto lg:items-center flex lg:flex-row flex-col">
+                            <ul class="gap-y-6 pb-6 h-full flex-col tracking-wide font-medium 
+                                text-gray-600 dark:text-gray-300 pt-28 lg:pt-0 lg:pb-0 
+                                lg:pr-6 
+                                lg:items-center 
+                                flex lg:gap-y-0 lg:flex-row">
+                                <li>
+                                    <a href="#" class="block md:px-3">
+                                        <span>Product</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block md:px-3">
+                                        <span>Use Cases</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block md:px-3">
+                                        <span>Integrations</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block md:px-3">
+                                        <span>Pricing</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block md:px-3">
+                                        <span>Blog</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="min-h-[max-content] border-t w-full dark:border-gray-700 lg:w-auto gap-y-2 pt-2 lg:gap-y-0 lg:gap-x-2 
+                            lg:pt-0 lg:pl-2 lg:border-t-0 
+                            lg:border-l lg:items-center flex flex-col sm:justify-center lg:flex-row">
+                                <li class="flex w-full">
+                                    <button type="button" title="Start buying" class="w-full py-3 px-6 rounded-md text-center transition dark:active:bg-sky-900 dark:focus:bg-gray-800 active:bg-sky-200 focus:bg-sky-100 lg:w-max">
+                                        <span class="block text-cyan-600 dark:text-cyan-400 font-semibold">
+                                            Sign in
+                                        </span>
+                                    </button>
+                                </li>
+
+                                <li class="flex w-full">
+                                    <button type="button" title="Start buying" class="w-full py-3 px-6 rounded-md text-center transition bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700 focus:bg-sky-600 lg:w-max">
+                                        <span class="block text-white font-semibold">
+                                            Try it for free
+                                        </span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="pt-32 pb-20 md:pt-40">
         <div class="container m-auto px-6 md:px-12 lg:px-6">
-            <div class="flex flex-wrap items-center justify-between py-6 gap-6 md:py-4 md:gap-0">
-                <input type="checkbox" name="toggle_nav" id="toggle_nav" class="peer hidden">
-                <div class="w-full flex justify-between lg:w-auto">
-                    <a href="#" aria-label="logo">
-                        <img src="images/logo.svg" class="w-36" alt="tailus logo" width="144" height="48">
-                    </a>
-                    <div class="flex items-center lg:hidden max-h-10">
-                        <label role="button" for="toggle_nav" aria-label="humburger" id="hamburger" class="relative h-auto px-2 py-3 z-40 bg-white rounded">
-                            <div id="line"
-                                class="m-auto h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
-                            <div id="line2"
-                                class="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 transition duration-300">
+            <div class="lg:flex lg:items-center lg:gap-x-16">
+                <div class="space-y-8 lg:w-7/12">
+                    <h1 class=" font-bold text-gray-900 text-4xl md:text-5xl dark:text-white">Run successful remote and hybrid teams</h1>
+                    <p class="text-gray-600 dark:text-gray-300 lg:w-11/12">
+                        DailyBot takes chat and collaboration to the next level: daily standups, team check-ins, surveys, kudos, best companion bot for your virtual watercooler, 1:1 intros, motivation tracking and more.
+                    </p>
+
+                    <span class="block font-semibold text-gray-500 dark:text-gray-400">The best companion bot for your chat app.</span>
+
+                    <div class="grid grid-cols-3 space-x-4 md:space-x-6 md:flex">
+                        <a aria-label="add to slack" href="#" class="p-4 border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-md hover:border-cyan-400 hover:shadow-lg">
+                            <div class="flex justify-center space-x-4">
+                                <img class="w-6 h-6" src="images/slack.png" alt="slack logo" loading="lazy" width="128" height="128">
+                                <span class="hidden font-medium md:block dark:text-white">Add to Slack</span>
                             </div>
-                        </label>
+                        </a>    
+                        <a aria-label="add to chat" href="#" class="p-4 border border-gray-200 dark:bg-gray-800  dark:border-gray-700 rounded-md hover:border-green-400 hover:shadow-lg">
+                            <div class="flex justify-center space-x-4">
+                                <img class="w-6 h-6" src="images/chat.png" alt="chat logo" loading="lazy" width="128" height="128">
+                                <span class="hidden font-medium md:block dark:text-white">Add to Google Chat</span>
+                            </div>
+                        </a>   
+                        <a aria-label="add to zoom" href="#" class="p-4 border border-gray-200 dark:bg-gray-800  dark:border-gray-700 rounded-md hover:border-blue-400 hover:shadow-lg">
+                            <div class="flex justify-center space-x-4">
+                                <img class="w-6 h-6" src="images/zoom.png" alt="chat logo" loading="lazy" width="128" height="128">
+                                <span class="hidden font-medium md:block dark:text-white">Add to Zoom</span>
+                            </div>
+                        </a>    
+                    </div>
+
+                    <div class="dark:text-gray-300">
+                        🔥🌟 
+                        <span>Other integrations :</span> 
+                        <a href="#" class="font-semibold text-gray-700 dark:text-gray-200">Discord,</a>
+                        <a href="#" class="font-semibold text-gray-700 dark:text-gray-200">Telegram</a>
                     </div>
                 </div>
-                <label for="toggle_nav" class="fixed hidden peer-checked:block top-0 left-0 z-10 bg-gray-700 bg-opacity-30 w-full h-full"></label>
-                <div hidden class="w-5/6 
-                flex
-                z-30
-                transition-all
-                duration-500
-                peer-checked:left-0
-                p-6
-                h-full
-                max-w-sm
-                fixed top-0 
-                -left-full
-                bg-white 
-                lg:space-y-0 
-                flex-col
-                lg:h-auto
-                lg:p-0
-                lg:left-0
-                lg:max-w-none
-                lg:relative
-                lg:flex-row 
-                lg:bg-transparent 
-                lg:w-auto lg:flex">
-                    <div class="w-full h-full lg:h-auto lg:items-center flex lg:flex-row flex-col">
-                        <div class="flex w-full pb-6 lg:hidden min-h-[max-content]">
-                            <a href="#" aria-label="logo">
-                                <img src="images/logo.svg" class="w-36" alt="tailus logo" width="144" height="48">
-                            </a>
-                        </div>
-                        <ul class="gap-y-6 pb-6 h-full flex-col tracking-wide font-medium 
-                        text-gray-600 pt-3 lg:pt-0 lg:pb-0 
-                        lg:pr-6 
-                        lg:items-center 
-                        flex lg:gap-y-0 lg:flex-row">
-                            <li>
-                                <a href="#" class="block md:px-3">
-                                    <span>Product</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="block md:px-3">
-                                    <span>Use Cases</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="block md:px-3">
-                                    <span>Integrations</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="block md:px-3">
-                                    <span>Pricing</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="block md:px-3">
-                                    <span>Blog</span>
-                                </a>
-                            </li>
-                        </ul>
 
-                        <ul class="min-h-[max-content] border-t w-full lg:w-auto gap-y-2 pt-2 lg:gap-y-0 lg:gap-x-2 
-                        lg:pt-0 lg:pl-2 lg:border-t-0 
-                        lg:border-l lg:items-center flex flex-col sm:justify-center lg:flex-row">
-                            <li class="flex w-full">
-                                <button type="button" title="Start buying" class="w-full py-3 px-6 rounded-md text-center transition active:bg-sky-200 focus:bg-sky-100 lg:w-max">
-                                    <span class="block text-cyan-600 font-semibold">
-                                        Sign in
-                                    </span>
-                                </button>
-                            </li>
-
-                            <li class="flex w-full">
-                                <button type="button" title="Start buying" class="w-full py-3 px-6 rounded-md text-center transition bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700 focus:bg-sky-600 lg:w-max">
-                                    <span class="block text-white font-semibold">
-                                        Try it for free
-                                    </span>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-</header>
-<div class="pt-32 pb-20 md:pt-40">
-    <div class="container m-auto px-6 md:px-12 lg:px-6">
-        <div class="lg:flex lg:items-center lg:gap-x-16">
-            <div class="space-y-8 lg:w-7/12">
-                <h1 class=" font-bold text-gray-900 text-4xl md:text-5xl">Run successful remote and hybrid teams</h1>
-                <p class="text-gray-600 lg:w-11/12">
-                    DailyBot takes chat and collaboration to the next level: daily standups, team check-ins, surveys, kudos, best companion bot for your virtual watercooler, 1:1 intros, motivation tracking and more.
-                </p>
-
-                <span class="block font-semibold">The best companion bot for your chat app.</span>
-
-                <div class="grid grid-cols-3 space-x-4 md:space-x-6 md:flex">
-                    <a aria-label="add to slack" href="#" class="p-4 border border-gray-200 rounded-md hover:border-cyan-400 hover:shadow-lg">
-                        <div class="flex justify-center space-x-4">
-                            <img class="w-6 h-6" src="images/slack.png" alt="slack logo" loading="lazy" width="128" height="128">
-                            <span class="hidden font-medium md:block">Add to Slack</span>
-                        </div>
-                    </a>    
-                    <a aria-label="add to chat" href="#" class="p-4 border border-gray-200 rounded-md hover:border-green-400 hover:shadow-lg">
-                        <div class="flex justify-center space-x-4">
-                            <img class="w-6 h-6" src="images/chat.png" alt="chat logo" loading="lazy" width="128" height="128">
-                            <span class="hidden font-medium md:block">Add to Google Chat</span>
-                        </div>
-                    </a>   
-                    <a aria-label="add to zoom" href="#" class="p-4 border border-gray-200 rounded-md hover:border-blue-400 hover:shadow-lg">
-                        <div class="flex justify-center space-x-4">
-                            <img class="w-6 h-6" src="images/zoom.png" alt="chat logo" loading="lazy" width="128" height="128">
-                            <span class="hidden font-medium md:block">Add to Zoom</span>
-                        </div>
-                    </a>    
-                </div>
-
-                <div>
-                    🔥🌟 
-                    <span>Other integrations :</span> 
-                    <a href="#" class="font-semibold text-gray-700">Discord,</a>
-                    <a href="#" class="font-semibold text-gray-700">Telegram</a>
-                </div>
-            </div>
-
-            <div hidden class="lg:block lg:w-5/12">
-                <img src="images/watch.svg" class="w-full" alt="wath illustration" loading="lazy" width="320" height="280">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="pb-8">
-    <div class="container m-auto px-6 md:px-12 lg:px-6">
-        <div class="py-8 px-12 bg-cyan-50 rounded-2xl">
-            <span class="block text-center font-medium text-cyan-700">Trusted by your favorite giants</span>
-            <div class="mt-8 flex justify-center flex-wrap items-center gap-4 md:gap-6 lg:gap-8">
-                <div class="flex items-center">
-                    <img class="w-36" src="images/clients/microsoft.png" alt="client logo" loading="lazy" width="584" height="122">
-                </div>
-                <div class="flex items-center">
-                    <img class="w-28" src="images/clients/myob.png" alt="client logo" loading="lazy" width="400" height="219">
-                </div>
-                <div class="flex items-center">
-                    <img class="w-28" src="images/clients/grabyo.png" alt="client logo" loading="lazy" width="400" height="219">
-                </div>
-                <div class="flex items-center">
-                    <img class="w-32" src="images/clients/lifegroups.png" alt="client logo" loading="lazy" width="400" height="219">
-                </div>
-                <div class="flex items-center">
-                    <img class="w-24" src="images/clients/lilly.png" alt="client logo" loading="lazy" width="400" height="219">
-                </div>
-                <div class="flex items-center">
-                    <img class="w-28" src="images/clients/grabyo.png" alt="client logo" loading="lazy" width="400" height="219">
-                </div>
-                <div class="flex items-center">
-                    <img class="w-32" src="images/clients/lifegroups.png" alt="client logo" loading="lazy" width="400" height="219">
+                <div hidden class="lg:block lg:w-5/12">
+                    <img src="images/watch.svg" class="w-full" alt="wath illustration" loading="lazy" width="320" height="280">
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- style.css -->
-<!-- 
-@layer components{
-    #toggle_nav:checked ~ div #hamburger #line
-    {
-        @apply rotate-45 translate-y-1.5
-    }
 
-    #toggle_nav:checked ~ div #hamburger #line2
-    {
-        @apply -rotate-45 -translate-y-1
-    } 
-} -->
+    <div class="pb-8">
+        <div class="container m-auto px-6 md:px-12 lg:px-6">
+            <div class="relative z-0 py-8 px-12 bg-cyan-50 rounded-2xl dark:bg-gray-800">
+                <span class="block text-center font-medium text-cyan-700 dark:text-cyan-400">Trusted by your favorite giants</span>
+                <div class="mt-8 flex justify-center flex-wrap items-center gap-4 md:gap-6 lg:gap-8">
+                    <div class="flex items-center">
+                        <img class="w-36 dark:grayscale dark:contrast-50" src="images/clients/microsoft.png" alt="client logo" loading="lazy" width="584" height="122">
+                    </div>
+                    <div class="flex items-center">
+                        <img class="w-28 dark:grayscale dark:contrast-50" src="images/clients/myob.png" alt="client logo" loading="lazy" width="400" height="219">
+                    </div>
+                    <div class="flex items-center">
+                        <img class="w-28 dark:grayscale dark:contrast-50" src="images/clients/grabyo.png" alt="client logo" loading="lazy" width="400" height="219">
+                    </div>
+                    <div class="flex items-center">
+                        <img class="w-32 dark:grayscale dark:contrast-50" src="images/clients/lifegroups.png" alt="client logo" loading="lazy" width="400" height="219">
+                    </div>
+                    <div class="flex items-center">
+                        <img class="w-24 dark:grayscale dark:contrast-50" src="images/clients/lilly.png" alt="client logo" loading="lazy" width="400" height="219">
+                    </div>
+                    <div class="flex items-center">
+                        <img class="w-28 dark:grayscale dark:contrast-50" src="images/clients/grabyo.png" alt="client logo" loading="lazy" width="400" height="219">
+                    </div>
+                    <div class="flex items-center">
+                        <img class="w-32 dark:grayscale dark:contrast-50" src="images/clients/lifegroups.png" alt="client logo" loading="lazy" width="400" height="219">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
