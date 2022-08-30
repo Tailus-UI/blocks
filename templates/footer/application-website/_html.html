@@ -1,21 +1,23 @@
-<footer class="relative flex flex-col items-center overflow-hidden bg-cyan-900 py-20 md:py-40">
+<footer class="relative flex flex-col items-center overflow-hidden bg-gray-50 dark:bg-gray-900 py-20 md:py-40">
   <div class="container relative z-[1] m-auto px-6 md:px-12">
     <div class="m-auto md:w-10/12 lg:w-8/12 xl:w-6/12">
       <div class="flex flex-wrap items-center justify-between md:flex-nowrap">
-        <div class="flex w-full justify-center space-x-12 text-gray-300 sm:w-7/12 md:justify-start">
+        <div
+          class="flex w-full justify-center space-x-12 text-gray-600 dark:text-gray-300 sm:w-7/12 md:justify-start"
+        >
           <ul class="list-inside list-disc space-y-8">
-            <li><a href="#" class="transition hover:text-sky-400">Home</a></li>
+            <li><a href="#" class="transition hover:text-primary">Home</a></li>
 
-            <li><a href="#" class="transition hover:text-sky-400">About</a></li>
-            <li><a href="#" class="transition hover:text-sky-400">Guide</a></li>
-            <li><a href="#" class="transition hover:text-sky-400">Blocks</a></li>
-            <li><a href="#" class="transition hover:text-sky-400">Contact</a></li>
-            <li><a href="#" class="transition hover:text-sky-400">Terms of Use</a></li>
+            <li><a href="#" class="transition hover:text-primary">About</a></li>
+            <li><a href="#" class="transition hover:text-primary">Guide</a></li>
+            <li><a href="#" class="transition hover:text-primary">Blocks</a></li>
+            <li><a href="#" class="transition hover:text-primary">Contact</a></li>
+            <li><a href="#" class="transition hover:text-primary">Terms of Use</a></li>
           </ul>
 
           <ul role="list" class="space-y-8">
             <li>
-              <a href="#" class="flex items-center space-x-3 transition hover:text-sky-400">
+              <a href="#" class="flex items-center space-x-3 transition hover:text-primary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -30,7 +32,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="flex items-center space-x-3 transition hover:text-sky-400">
+              <a href="#" class="flex items-center space-x-3 transition hover:text-primary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -45,7 +47,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="flex items-center space-x-3 transition hover:text-sky-400">
+              <a href="#" class="flex items-center space-x-3 transition hover:text-primary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -61,7 +63,7 @@
             </li>
 
             <li>
-              <a href="#" class="flex items-center space-x-3 transition hover:text-sky-400">
+              <a href="#" class="flex items-center space-x-3 transition hover:text-primary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -76,7 +78,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="flex items-center space-x-3 transition hover:text-sky-400">
+              <a href="#" class="flex items-center space-x-3 transition hover:text-primary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -91,7 +93,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="flex items-center space-x-3 transition hover:text-sky-400">
+              <a href="#" class="flex items-center space-x-3 transition hover:text-primary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -108,9 +110,11 @@
               </a>
             </li>
             <li>
-              <a href="#" class="flex items-center space-x-3 transition hover:text-sky-400">
+              <a href="#" class="flex items-center space-x-3 transition hover:text-primary">
                 <img
                   class="h-5 w-5"
+                  width="32"
+                  height="32"
                   src="https://c5.patreon.com/external/favicon/favicon.ico?v=69kMELnXkB"
                   alt="patreon icon"
                 />
@@ -118,7 +122,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="flex items-center space-x-3 transition hover:text-sky-400">
+              <a href="#" class="flex items-center space-x-3 transition hover:text-primary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -134,82 +138,25 @@
             </li>
           </ul>
         </div>
-        <div class="m-auto mt-16 w-10/12 space-y-6 text-center sm:mt-auto sm:w-5/12 sm:text-left">
-          <span class="block text-gray-300"
+        <div
+          class="m-auto mt-16 w-10/12 space-y-6 text-center sm:mt-auto sm:w-5/12 sm:text-left"
+        >
+          <span class="block text-gray-500 dark:text-gray-400"
             >We change the way UI components librairies are used</span
           >
 
-          <span class="block text-gray-300">Tailus Blocks &copy; 2021</span>
+          <span class="block text-gray-500 dark:text-gray-400">Tailus Blocks &copy; <span id="year"></span></span>
 
           <span class="flex justify-between text-white">
             <a href="#" class="font-semibold">Terms of Use </a>
             <a href="#" class="font-semibold"> Privacy Policy</a>
           </span>
 
-          <span class="block text-gray-300"
+          <span class="block text-gray-500 dark:text-gray-400"
             >Need help? <a href="#" class="font-semibold text-white"> Contact Us</a></span
           >
         </div>
       </div>
     </div>
   </div>
-  <div aria-hidden="true" class="absolute inset-0 flex h-full items-center">
-    <div
-      aria-hidden="true"
-      class="bg-layers bg-scale m-auto h-56 w-56 rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 blur-xl md:h-[30rem] md:w-[30rem] md:blur-3xl"
-    ></div>
-  </div>
-  <div aria-hidden="true" class="absolute inset-0 h-full w-full bg-[#020314] opacity-80"></div>
 </footer>
-
-<!--
-
-    Add to your stylesheet
-
-.bg-layers {
-    -webkit-animation: filter-animation 4s infinite;
-    animation: filter-animation 4s infinite;
-}
-
-.bg-scale {
-    -webkit-animation: filter-animation 8s infinite;
-    animation: filter-scale 8s infinite;
-}
-  
-@-webkit-keyframes filter-animation {
-    0% {
-      -webkit-filter: hue-rotate(0deg);
-    }
-    50% {
-      -webkit-filter: hue-rotate(45deg);
-    }
-    
-    100% {
-      -webkit-filter: hue-rotate(0deg);
-    }
-}
-  
-@keyframes filter-animation {
-    0% {
-      filter: hue-rotate(0deg);
-    }
-    50% {
-      filter: hue-rotate(45deg);
-    }
-    100% {
-      filter: hue-rotate(0deg);
-    }
-}
-
-@keyframes filter-scale {
-    0% {
-      transform:scale(1);
-    }
-    50% {
-      transform:scale(1.4);
-    }
-    100% {
-        transform:scale(.8);
-    }
-}
--->
