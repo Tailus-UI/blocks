@@ -13,37 +13,38 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div class="bg-white py-16">
+  <body class="bg-white dark:bg-gray-900">
+    <div class=" py-16"> 
       <div class="container m-auto space-y-8 px-6 text-gray-500 md:px-12 lg:px-20">
         <div
           class="justify-center gap-6 text-center md:flex md:text-left lg:items-center lg:gap-16"
         >
           <div class="order-last mb-6 space-y-6 md:mb-0 md:w-6/12 lg:w-6/12">
-            <h1 class="text-4xl font-bold text-gray-700 md:text-5xl">
-              Buy now and benefit up to <span class="text-blue-500">30% off</span>
+            <h1 class="text-4xl font-bold text-gray-800 md:text-5xl dark:text-white">
+              Buy now and benefit up to <span class="text-primary dark:text-sky-300">30% off</span>
             </h1>
-            <p class="text-lg">
+            <p class="text-lg text-gray-600 dark:text-gray-300">
               Be part of millions people around the world using tailus in modern User Interfaces.
             </p>
-            <div
-              class="flex flex-row-reverse flex-wrap justify-center gap-4 md:justify-end md:gap-6"
-            >
-              <button
-                type="button"
-                title="Start buying"
-                class="w-full rounded-xl bg-gray-700 py-3 px-6 text-center shadow-xl transition hover:bg-gray-600 focus:bg-gray-600 active:bg-gray-700 sm:w-max"
+            <div class="flex flex-wrap gap-6">
+              <a
+                href="#"
+                class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
               >
-                <span class="block font-semibold text-white"> Start buying </span>
-              </button>
-              <button
-                type="button"
-                title="more about"
-                class="order-first w-full rounded-xl bg-gray-100 py-3 px-6 text-center transition hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-300 sm:w-max"
+                <span class="relative text-base font-semibold text-white dark:text-dark"
+                  >Shop now</span
+                >
+              </a>
+              <a
+                href="#"
+                class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
               >
-                <span class="block font-semibold text-gray-600"> More about </span>
-              </button>
-            </div>
+                <span
+                  class="relative text-base font-semibold text-primary dark:text-white"
+                  >More about</span
+                >
+            </a>
+          </div>
           </div>
           <div class="grid grid-cols-5 grid-rows-4 gap-4 md:w-5/12 lg:w-6/12">
             <div class="col-span-2 row-span-4">
