@@ -5539,6 +5539,14 @@ body{
     padding-left: 5rem;
   }
 
+  .lg\:pt-48 {
+    padding-top: 12rem;
+  }
+
+  .lg\:pt-44 {
+    padding-top: 11rem;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
