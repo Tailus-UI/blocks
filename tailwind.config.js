@@ -11,7 +11,7 @@ module.exports = {
     'border-yellow-300'
   ],
   presets: [],
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     screens: {
       sm: "640px",
